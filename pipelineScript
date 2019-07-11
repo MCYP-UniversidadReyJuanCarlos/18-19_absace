@@ -1,0 +1,50 @@
+
+node {
+	stage ('Checkout') {
+		git 'https://github.com/WebGoat/WebGoat.git'
+	}
+	stage ('Build') {
+		try {
+			docker.image('maven').inside('-v $HOME/.m2:/root/.m2') {
+				sh 'mvn -version'
+				sh 'mvn -DskipTests=true install'
+			}
+		}
+		catch (exc) {
+			echo 'Something failed in Building MVN'
+		}
+		try {
+			docker.build("webgoat-abrin09:${env.BUILD_ID}", "webgoat-server")
+		}
+		catch (exc) {
+			echo 'Something failed in Building Docker Image'
+		}
+	}
+	stage('SonarQube Scan') {
+		withSonarQubeEnv('SonarServer') {
+			docker.image('maven').inside('-v $HOME/.m2:/root/.m2') {
+				sh 'mvn -version'
+				sh 'mvn sonar:sonar'
+			}
+			
+		}
+	}
+	stage("Quality Gate") {
+			timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout
+			def qg = waitForQualityGate() // Reuse taskId previously collected by withSonarQubeEnv
+			if (qg.status != 'OK') {
+				error "Pipeline aborted due to quality gate failure: ${qg.status}"
+			}
+		}
+	}
+	//Vulneravility scanner with Clair
+	docker.image('nordri/clair-scanner').inside('--net ci') {
+		stage ('Security scanner') {
+			sh '''
+			IP=$(ip r | tail -n1 | awk '{ print $9 }')
+			/clair-scanner --ip ${IP} --clair=http://clair:6060 --threshold="Critical" DOCKER_IMAGE
+			'''
+		}
+	}
+}
+

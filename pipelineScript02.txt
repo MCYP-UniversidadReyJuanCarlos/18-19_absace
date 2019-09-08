@@ -1,0 +1,48 @@
+//Script verde
+
+node {
+	stage ('Checkout') {
+		git 'https://github.com/Abrin09/Webgoat_7.1.git'
+	}
+
+//docker.image('maven').inside('-v $HOME/.m2:/root/.m2') {
+	stage ('Build') {
+		try {
+			withMaven(maven: 'maven'){
+				sh 'mvn -version'
+				sh 'mvn clean -DskipTests=true install'
+			} // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
+		}
+		catch (exc) {
+			echo 'Something failed in Building MVN'
+		}
+		try {
+			def customImage = docker.build("webgoatAbrin_${env.BUILD_ID}")
+			customImage.inside {
+				sh 'make test'
+			}
+		}
+		catch (exc) {
+			echo 'Something failed in Building MVN'
+		}
+	}
+//}	
+	stage('SonarQube Scan') {
+		withSonarQubeEnv('SonarQubeServer'){// Optionally use a Maven environment you've configured already
+			withMaven(maven: 'maven'){
+				sh 'mvn sonar:sonar'
+			}
+		}
+	}
+	
+	sleep(5)
+	// No need to occupy a node
+	stage("Quality Gate") {
+		timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout
+			def qg = waitForQualityGate() // Reuse taskId previously collected by withSonarQubeEnv
+			if (qg.status != 'OK') {
+				error "Pipeline aborted due to quality gate failure: ${qg.status}"
+			}
+		}
+	}
+}

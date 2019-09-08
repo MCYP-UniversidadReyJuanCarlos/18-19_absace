@@ -2,31 +2,30 @@
 
 node {
 	stage ('Checkout') {
-		git 'https://github.com/Abrin09/Webgoat_7.1.git'
+		git 'https://github.com/WebGoat/WebGoat.git'
 	}
 
-//docker.image('maven').inside('-v $HOME/.m2:/root/.m2') {
 	stage ('Build') {
 		try {
 			withMaven(maven: 'maven'){
 				sh 'mvn -version'
-				sh 'mvn clean -DskipTests=true install'
+				sh 'mvn clean install'
 			} // withMaven will discover the generated Maven artifacts, JUnit Surefire & FailSafe & FindBugs & SpotBugs reports...
 		}
 		catch (exc) {
 			echo 'Something failed in Building MVN'
 		}
 		try {
-			def customImage = docker.build("webgoatAbrin_${env.BUILD_ID}")
+			def customImage = docker.build("webgoatASC_${env.BUILD_ID}", "-f ./webgoat-server/Dockerfile")
 			customImage.inside {
 				sh 'make test'
 			}
 		}
 		catch (exc) {
-			echo 'Something failed in Building MVN'
+			echo 'Something failed in Building DockerIMAGE'
 		}
 	}
-//}	
+
 	stage('SonarQube Scan') {
 		withSonarQubeEnv('SonarQubeServer'){// Optionally use a Maven environment you've configured already
 			withMaven(maven: 'maven'){
@@ -35,7 +34,6 @@ node {
 		}
 	}
 	
-	sleep(5)
 	// No need to occupy a node
 	stage("Quality Gate") {
 		timeout(time: 1, unit: 'HOURS') { // Just in case something goes wrong, pipeline will be killed after a timeout

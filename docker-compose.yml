@@ -1,4 +1,4 @@
-version: "3.7"
+version: "20.7.21"
 
 services:
   jenkins:
@@ -13,6 +13,15 @@ services:
     image: sonarqube:lts
     ports:
       - 9000:9000
+    volumes:
+      - sonarqube_conf:/opt/sonarqube/conf:
+      - sonarqube_data:/opt/sonarqube/data:
+      - sonarqube_logs:/opt/sonarqube/logs:
+      - sonarqube_extensions:/opt/sonarqube/extensions:
 
 volumes:
   jenkins_home:
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_logs:
+  sonarqube_extensions:

@@ -18,11 +18,6 @@ services:
       - 9000:9000
     networks:
       - mynet
-    volumes:
-      - sonarqube_conf:/opt/sonarqube/conf:
-      - sonarqube_data:/opt/sonarqube/data:
-      - sonarqube_logs:/opt/sonarqube/logs:
-      - sonarqube_extensions:/opt/sonarqube/extensions:
 
 networks:
   mynet:
@@ -30,7 +25,4 @@ networks:
 
 volumes:
   jenkins_home:
-  sonarqube_conf:
-  sonarqube_data:
-  sonarqube_logs:
-  sonarqube_extensions:
+

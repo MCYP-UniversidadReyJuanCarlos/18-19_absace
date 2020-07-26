@@ -1,34 +1,36 @@
 pipeline {
-	agent any environment {
+	agent any
+	environment {
 		//Variables de entorno
 		workspace = pwd()
+	}
+	tools { 
+		maven 'maven363' 
 	}
 	stages {
 		stage('Checkout repository changes') {
 			steps {
-			echo 'Downloading the code from GitHub'
-			checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
-			doGenerateSubmoduleConfigurations: false, extensions: [], 
-			submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/WebGoat/WebGoat']]])
+				echo 'Downloading the code from GitHub'
+				checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+				doGenerateSubmoduleConfigurations: false, extensions: [], 
+				submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/WebGoat/WebGoat']]])
 			}
 		}
-
 		stage('SAST analysis') {
 			steps {
 				echo 'Performing SAST analysis to the code from the commit'
-				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/My_Sonar_Scanner/bin/sonar-scanner -X -Dsonar.host.url=http://3.250.156.138:9000 -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
+				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/My_Sonar_Scanner/bin/sonar-scanner -X -Dsonar.host.url=http://34.243.249.112:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
 				echo 'SAST Finished!!!'
 			}
 		}
-
 		stage('Docker Build') {
 			steps {
 				echo 'Compiling Code'
-				sh "mvn install -DskipTests" echo 'Jar file generated'
-				dir ('./webgoat-server'){
-					echo 'Building Docker Image'
-					sh "docker build -t webgoat/webgoat-8.0 ." echo 'Docker image builded'
-				}
+				sh "mvn install -DskipTests"
+				echo 'Compilated Code Succesful'
+				echo 'Building docker image'
+				sh "docker build -t webgoat/webgoat-8.0 ."
+				echo 'Docker image builded'
 			}
 		}
 	}

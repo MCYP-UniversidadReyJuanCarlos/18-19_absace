@@ -1,0 +1,1106 @@
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin LDAP / 2.2.0.608 / 79dc3fa4393a29667673c70182f3016288b548b7
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SAML 2.0 Authentication for SonarQube / 1.1.0.181 / 16fcb5be2d3bcfee8920b29cd758d8b957a18acb
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarC# / 7.15.0.8572 / e0ad49e38a28a8fc333ba746fc998e48678f6a8b
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarCSS / 1.1.1.1010 / 365e21fd0cb9035669fc59f6fec7c8fd28a7303b
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarFlex / 2.5.1.1831 / a0c44437f6abb0feec76edd073f91fec64db2a6c
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarGo / 1.1.1.2000 / 40d55921c7a63b67386a053490d17b6723a46cd5
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarHTML / 3.1.0.1615 / 4181edb5eff5605bec82dc0aa15ecd70eaa5857f
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarJS / 5.2.1.7778 / 49f34eaeaad59868d4353d89b1fc5c02bbe51976
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarJava / 5.13.1.18282 / 568f8ed2349f48e250a9329895b9a870100dfbeb
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarKotlin / 1.5.0.315 / 4ff3a145a58f3f84f1b39846a205a129d742e993
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarPHP / 3.2.0.4868 / ec66bd5f8490677eb0ebae82aa17c2a5d9c0e5e7
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarPython / 1.14.1.3143 / eed7b315b6116fe462a19c771013bf3891c92a97
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarRuby / 1.5.0.315 / 4ff3a145a58f3f84f1b39846a205a129d742e993
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarScala / 1.5.0.315 / 4ff3a145a58f3f84f1b39846a205a129d742e993
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarTS / 1.9.0.3766 / 4a4080b78001a78d758d1d0fa0190fb9496b6f57
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarVB / 7.15.0.8572 / e0ad49e38a28a8fc333ba746fc998e48678f6a8b
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin SonarXML / 2.0.1.2020 / c5b84004face582d56f110e24c29bf9c6a679e69
+sonarqube_1  | 2020.07.21 15:59:26 INFO  web[][o.s.s.p.ServerPluginRepository] Deploy plugin Svn / 1.9.0.1295 / 942e075773975354e32691a60bfd968065703e04
+sonarqube_1  | 2020.07.21 15:59:27 INFO  web[][o.s.s.p.d.m.AutoDbMigration] Automatically perform DB migration on fresh install
+sonarqube_1  | 2020.07.21 15:59:27 INFO  web[][o.s.s.p.Platform] Database has been automatically updated
+sonarqube_1  | 2020.07.21 15:59:27 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceFilter@65e1ccd [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/properties*, ...]}]
+sonarqube_1  | 2020.07.21 15:59:27 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+sonarqube_1  | 2020.07.21 15:59:28 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+sonarqube_1  | 2020.07.21 15:59:29 INFO  web[][o.s.s.e.IndexCreator] Create index [metadatas]
+sonarqube_1  | 2020.07.21 15:59:29 INFO  web[][o.s.s.e.IndexCreator] Create type metadatas/metadata
+sonarqube_1  | 2020.07.21 15:59:29 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [metadatas] creating index, cause [api], templates [], shards [1]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:29 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[metadatas][0]] ...]).
+sonarqube_1  | 2020.07.21 15:59:29 INFO  es[][o.e.c.m.MetaDataMappingService] [metadatas/B7gFY60NTkGwd4w44hOXdw] create_mapping [metadata]
+sonarqube_1  | 2020.07.21 15:59:29 INFO  web[][o.s.s.e.IndexCreator] Create index [components]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create type components/auth
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create index [projectmeasures]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create type projectmeasures/auth
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create index [rules]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create type rules/rule
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create index [issues]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [components] creating index, cause [api], templates [], shards [5]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[components][4]] ...]).
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataMappingService] [components/AkvbiQ0qS-6dCa9fWYNNAQ] create_mapping [auth]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [projectmeasures] creating index, cause [api], templates [], shards [5]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[projectmeasures][4]] ...]).
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataMappingService] [projectmeasures/wWvn-R-2T9ya174S614Ljw] create_mapping [auth]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [rules] creating index, cause [api], templates [], shards [2]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[rules][0]] ...]).
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataMappingService] [rules/KjrD-87sRhC6LxWFgKbicQ] create_mapping [rule]
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [issues] creating index, cause [api], templates [], shards [5]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:30 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[issues][4]] ...]).
+sonarqube_1  | 2020.07.21 15:59:30 INFO  web[][o.s.s.e.IndexCreator] Create type issues/auth
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.e.IndexCreator] Create index [users]
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.e.IndexCreator] Create type users/user
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.e.IndexCreator] Create index [views]
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.e.IndexCreator] Create type views/view
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.s.LogServerId] Server ID: BF41A1F2-AXNyGepXhoDrZSokjZPE
+sonarqube_1  | 2020.07.21 15:59:31 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to a HTTPS URL.
+sonarqube_1  | 2020.07.21 15:59:31 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/plugins/download
+sonarqube_1  | 2020.07.21 15:59:31 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/permissions/search_templates
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.s.GeneratePluginIndex] Generate scanner plugin index
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.s.RegisterMetrics] Register metrics
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.q.RegisterQualityGates] Built-in quality gate's conditions of [Sonar way] has been updated
+sonarqube_1  | 2020.07.21 15:59:31 INFO  web[][o.s.s.r.RegisterRules] Register rules
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.m.MetaDataMappingService] [issues/2bM-NdsRTBObmj18iPCU9A] create_mapping [auth]
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [users] creating index, cause [api], templates [], shards [1]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[users][0]] ...]).
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.m.MetaDataMappingService] [users/chkTcJqcQ8ylLuuKfZxSnQ] create_mapping [user]
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.m.MetaDataCreateIndexService] [views] creating index, cause [api], templates [], shards [5]/[0], mappings []
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.r.a.AllocationService] Cluster health status changed from [YELLOW] to [GREEN] (reason: [shards started [[views][4]] ...]).
+sonarqube_1  | 2020.07.21 15:59:31 INFO  es[][o.e.c.m.MetaDataMappingService] [views/m4hmlkuOTqSJlO-to4AAFw] create_mapping [view]
+sonarqube_1  | 2020.07.21 15:59:45 INFO  web[][o.s.s.q.BuiltInQProfileRepositoryImpl] Load quality profiles
+sonarqube_1  | 2020.07.21 15:59:47 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register quality profiles
+sonarqube_1  | 2020.07.21 15:59:47 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile css/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile scala/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile jsp/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile go/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile kotlin/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile js/Sonar way Recommended
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile js/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile py/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile ruby/Sonar way
+sonarqube_1  | 2020.07.21 15:59:49 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile cs/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile java/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile web/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile flex/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile xml/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile php/Sonar way
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile php/PSR-2
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile php/Drupal
+sonarqube_1  | 2020.07.21 15:59:50 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile vbnet/Sonar way
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile ts/Sonar way
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register profile ts/Sonar way recommended
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceFilter@1e237fa2 [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/properties*, ...]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.DeprecatedPropertiesWsFilter@5b5b4da1 [pattern=UrlPattern{inclusions=[/api/properties/*], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.ws.WebServiceReroutingFilter@5d53a7ae [pattern=UrlPattern{inclusions=[/api/components/bulk_update_key, ...], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@1f51d7bf [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@44deb005 [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@2f4238f6 [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@1a964897 [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@6536f38f [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+sonarqube_1  | 2020.07.21 15:59:51 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [rules/rule/activeRule] ...
+sonarqube_1  | 2020.07.21 15:59:52 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [rules/rule/activeRule] done | time=1394ms
+sonarqube_1  | 2020.07.21 15:59:52 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [rules/rule],[rules/rule/ruleExtension] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [rules/rule],[rules/rule/ruleExtension] done | time=4415ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [users/user] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [users/user] done | time=122ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [components/auth/component] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [components/auth/component] done | time=63ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [views/view] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [views/view] done | time=66ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [issues/auth/issue] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [issues/auth/issue] done | time=59ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of types [components/auth],[projectmeasures/auth],[issues/auth] done | time=59ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [projectmeasures/auth/projectmeasure] ...
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.e.IndexerStartupTask] Indexing of type [projectmeasures/auth/projectmeasure] done | time=47ms
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is enabled.
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.p.Platform] WebServer is operational
+sonarqube_1  | 2020.07.21 15:59:57 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning will be disabled as there are no more projects in warning.
+sonarqube_1  | 2020.07.21 15:59:57 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+sonarqube_1  | 2020.07.21 15:59:57 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [/opt/sonarqube]: /usr/local/openjdk-11/bin/java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=/opt/sonarqube/temp --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*:/opt/sonarqube/lib/jdbc/h2/h2-1.3.176.jar org.sonar.ce.app.CeServer /opt/sonarqube/temp/sq-process9072445950709397938properties
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [30s] to [-1]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+sonarqube_1  | 2020.07.21 15:59:57 INFO  es[][o.e.c.s.IndexScopedSettings] updating [index.refresh_interval] from [-1] to [30s]
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.s.p.ProcessEntryPoint] Starting ce
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.s.ce.app.CeServer] Compute Engine starting up...
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.e.p.PluginsService] no modules loaded
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+sonarqube_1  | 2020.07.21 15:59:58 INFO  ce[][o.e.p.PluginsService] loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+sonarqube_1  | 2020.07.21 16:00:00 INFO  ce[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [127.0.0.1:9001]
+sonarqube_1  | 2020.07.21 16:00:00 INFO  ce[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+sonarqube_1  | 2020.07.21 16:00:00 WARN  ce[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+sonarqube_1  | 2020.07.21 16:00:01 INFO  ce[][o.s.s.p.ServerFileSystemImpl] SonarQube home: /opt/sonarqube
+sonarqube_1  | 2020.07.21 16:00:01 INFO  ce[][o.s.c.c.CePluginRepository] Load plugins
+sonarqube_1  | 2020.07.21 16:00:02 INFO  ce[][o.s.c.c.ComputeEngineContainerImpl] Running Community edition
+sonarqube_1  | 2020.07.21 16:00:02 INFO  ce[][o.s.ce.app.CeServer] Compute Engine is operational
+sonarqube_1  | 2020.07.21 16:00:02 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+sonarqube_1  | 2020.07.21 16:00:02 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+jenkins_1    | 2020-07-21 16:04:46.824+0000 [id=14]     INFO    hudson.PluginManager#install: Starting installation of a batch of 20 plugins plus their dependencies
+jenkins_1    | 2020-07-21 16:04:46.824+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of trilead-api for plugin cloudbees-folder
+jenkins_1    | 2020-07-21 16:04:46.829+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of trilead-api on behalf of admin
+jenkins_1    | 2020-07-21 16:04:46.829+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of token-macro for plugin build-timeout
+jenkins_1    | 2020-07-21 16:04:46.831+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of structs for plugin token-macro
+jenkins_1    | 2020-07-21 16:04:46.831+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jdk-tool for plugin structs
+jenkins_1    | 2020-07-21 16:04:46.832+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-step-api for plugin token-macro
+jenkins_1    | 2020-07-21 16:04:46.832+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of plain-credentials for plugin credentials-binding
+jenkins_1    | 2020-07-21 16:04:46.832+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of credentials for plugin plain-credentials
+jenkins_1    | 2020-07-21 16:04:46.832+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ssh-credentials for plugin credentials-binding
+jenkins_1    | 2020-07-21 16:04:46.832+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-api for plugin timestamper
+jenkins_1    | 2020-07-21 16:04:46.833+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of scm-api for plugin workflow-api
+jenkins_1    | 2020-07-21 16:04:46.833+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of script-security for plugin ws-cleanup
+jenkins_1    | 2020-07-21 16:04:46.833+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-durable-task-step for plugin ws-cleanup
+jenkins_1    | 2020-07-21 16:04:46.834+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-support for plugin workflow-durable-task-step
+jenkins_1    | 2020-07-21 16:04:46.834+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of durable-task for plugin workflow-durable-task-step
+jenkins_1    | 2020-07-21 16:04:46.834+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of matrix-project for plugin ws-cleanup
+jenkins_1    | 2020-07-21 16:04:46.835+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of junit for plugin matrix-project
+jenkins_1    | 2020-07-21 16:04:46.835+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of resource-disposer for plugin ws-cleanup
+jenkins_1    | 2020-07-21 16:04:46.835+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of command-launcher for plugin resource-disposer
+jenkins_1    | 2020-07-21 16:04:46.835+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-cps for plugin gradle
+jenkins_1    | 2020-07-21 16:04:46.835+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of ace-editor for plugin workflow-cps
+jenkins_1    | 2020-07-21 16:04:46.836+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of bouncycastle-api for plugin ace-editor
+jenkins_1    | 2020-07-21 16:04:46.836+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jquery-detached for plugin workflow-cps
+jenkins_1    | 2020-07-21 16:04:46.836+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-scm-step for plugin workflow-cps
+jenkins_1    | 2020-07-21 16:04:46.836+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-job for plugin gradle
+jenkins_1    | 2020-07-21 16:04:46.837+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-basic-steps for plugin gradle
+jenkins_1    | 2020-07-21 16:04:46.837+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of apache-httpcomponents-client-4-api for plugin workflow-basic-steps
+jenkins_1    | 2020-07-21 16:04:46.837+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mailer for plugin workflow-basic-steps
+jenkins_1    | 2020-07-21 16:04:46.837+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of display-url-api for plugin mailer
+jenkins_1    | 2020-07-21 16:04:46.838+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-milestone-step for plugin workflow-aggregator
+jenkins_1    | 2020-07-21 16:04:46.839+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-view for plugin workflow-aggregator
+jenkins_1    | 2020-07-21 16:04:46.839+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-rest-api for plugin pipeline-stage-view
+jenkins_1    | 2020-07-21 16:04:46.839+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jackson2-api for plugin pipeline-rest-api
+jenkins_1    | 2020-07-21 16:04:46.839+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of snakeyaml-api for plugin jackson2-api
+jenkins_1    | 2020-07-21 16:04:46.840+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-graph-analysis for plugin pipeline-rest-api
+jenkins_1    | 2020-07-21 16:04:46.840+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-input-step for plugin pipeline-graph-analysis
+jenkins_1    | 2020-07-21 16:04:46.840+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-step for plugin pipeline-graph-analysis
+jenkins_1    | 2020-07-21 16:04:46.841+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of handlebars for plugin pipeline-stage-view
+jenkins_1    | 2020-07-21 16:04:46.841+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of momentjs for plugin pipeline-stage-view
+jenkins_1    | 2020-07-21 16:04:46.841+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-build-step for plugin workflow-aggregator
+jenkins_1    | 2020-07-21 16:04:46.842+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-definition for plugin workflow-aggregator
+jenkins_1    | 2020-07-21 16:04:46.842+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-extensions for plugin pipeline-model-definition
+jenkins_1    | 2020-07-21 16:04:46.842+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-model-api for plugin pipeline-model-extensions
+jenkins_1    | 2020-07-21 16:04:46.843+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-cps-global-lib for plugin pipeline-model-definition
+jenkins_1    | 2020-07-21 16:04:46.843+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git-server for plugin workflow-cps-global-lib
+jenkins_1    | 2020-07-21 16:04:46.843+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git-client for plugin git-server
+jenkins_1    | 2020-07-21 16:04:46.843+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of jsch for plugin git-client
+jenkins_1    | 2020-07-21 16:04:46.844+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of workflow-multibranch for plugin pipeline-model-definition
+jenkins_1    | 2020-07-21 16:04:46.844+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of branch-api for plugin workflow-multibranch
+jenkins_1    | 2020-07-21 16:04:46.845+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of pipeline-stage-tags-metadata for plugin pipeline-model-definition
+jenkins_1    | 2020-07-21 16:04:46.845+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of lockable-resources for plugin workflow-aggregator
+jenkins_1    | 2020-07-21 16:04:46.845+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of github-api for plugin github-branch-source
+jenkins_1    | 2020-07-21 16:04:46.846+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of okhttp-api for plugin github-api
+jenkins_1    | 2020-07-21 16:04:46.846+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of github for plugin github-branch-source
+jenkins_1    | 2020-07-21 16:04:46.846+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of git for plugin github
+jenkins_1    | 2020-07-21 16:04:46.848+0000 [id=14]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of mapdb-api for plugin subversion
+jenkins_1    | 2020-07-21 16:04:47.280+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading trilead-api
+jenkins_1    | 2020-07-21 16:04:47.760+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: trilead-api
+jenkins_1    | 2020-07-21 16:04:47.760+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of cloudbees-folder on behalf of admin
+jenkins_1    | 2020-07-21 16:04:48.122+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading cloudbees-folder
+jenkins_1    | 2020-07-21 16:04:48.304+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: cloudbees-folder
+jenkins_1    | 2020-07-21 16:04:48.304+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of antisamy-markup-formatter on behalf of admin
+jenkins_1    | 2020-07-21 16:04:48.778+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading antisamy-markup-formatter
+jenkins_1    | 2020-07-21 16:04:51.984+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: antisamy-markup-formatter
+jenkins_1    | 2020-07-21 16:04:51.984+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of jdk-tool on behalf of admin
+jenkins_1    | 2020-07-21 16:04:52.358+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jdk-tool
+jenkins_1    | 2020-07-21 16:04:52.529+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: jdk-tool
+jenkins_1    | 2020-07-21 16:04:52.529+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of structs on behalf of admin
+jenkins_1    | 2020-07-21 16:04:52.918+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading structs
+jenkins_1    | 2020-07-21 16:04:53.028+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: structs
+jenkins_1    | 2020-07-21 16:04:53.028+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-step-api on behalf of admin
+jenkins_1    | 2020-07-21 16:04:53.398+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-step-api
+jenkins_1    | 2020-07-21 16:04:53.508+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-step-api
+jenkins_1    | 2020-07-21 16:04:53.508+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of token-macro on behalf of admin
+jenkins_1    | 2020-07-21 16:04:53.915+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading token-macro
+jenkins_1    | 2020-07-21 16:04:54.542+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: token-macro
+jenkins_1    | 2020-07-21 16:04:54.542+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of build-timeout on behalf of admin
+jenkins_1    | 2020-07-21 16:04:54.931+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading build-timeout
+jenkins_1    | 2020-07-21 16:04:55.042+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: build-timeout
+jenkins_1    | 2020-07-21 16:04:55.042+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials on behalf of admin
+jenkins_1    | 2020-07-21 16:04:55.422+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials
+jenkins_1    | 2020-07-21 16:04:56.078+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials
+jenkins_1    | 2020-07-21 16:04:56.078+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of plain-credentials on behalf of admin
+jenkins_1    | 2020-07-21 16:04:56.456+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading plain-credentials
+jenkins_1    | 2020-07-21 16:04:56.544+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: plain-credentials
+jenkins_1    | 2020-07-21 16:04:56.544+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-credentials on behalf of admin
+jenkins_1    | 2020-07-21 16:04:56.914+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-credentials
+jenkins_1    | 2020-07-21 16:04:57.086+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-credentials
+jenkins_1    | 2020-07-21 16:04:57.086+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of credentials-binding on behalf of admin
+jenkins_1    | 2020-07-21 16:04:57.485+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading credentials-binding
+jenkins_1    | 2020-07-21 16:04:57.696+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: credentials-binding
+jenkins_1    | 2020-07-21 16:04:57.696+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of scm-api on behalf of admin
+jenkins_1    | 2020-07-21 16:04:58.094+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading scm-api
+jenkins_1    | 2020-07-21 16:04:58.308+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: scm-api
+jenkins_1    | 2020-07-21 16:04:58.308+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-api on behalf of admin
+jenkins_1    | 2020-07-21 16:04:58.677+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-api
+jenkins_1    | 2020-07-21 16:04:59.011+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-api
+jenkins_1    | 2020-07-21 16:04:59.012+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of timestamper on behalf of admin
+jenkins_1    | 2020-07-21 16:04:59.362+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading timestamper
+jenkins_1    | 2020-07-21 16:04:59.954+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: timestamper
+jenkins_1    | 2020-07-21 16:04:59.954+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of script-security on behalf of admin
+jenkins_1    | 2020-07-21 16:05:00.305+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading script-security
+jenkins_1    | 2020-07-21 16:05:01.228+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: script-security
+jenkins_1    | 2020-07-21 16:05:01.228+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-support on behalf of admin
+jenkins_1    | 2020-07-21 16:05:01.598+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-support
+jenkins_1    | 2020-07-21 16:05:01.939+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-support
+jenkins_1    | 2020-07-21 16:05:01.939+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of durable-task on behalf of admin
+jenkins_1    | 2020-07-21 16:05:02.292+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading durable-task
+jenkins_1    | 2020-07-21 16:05:06.929+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: durable-task
+jenkins_1    | 2020-07-21 16:05:06.929+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-durable-task-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:07.307+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-durable-task-step
+jenkins_1    | 2020-07-21 16:05:07.395+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-durable-task-step
+jenkins_1    | 2020-07-21 16:05:07.395+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of junit on behalf of admin
+jenkins_1    | 2020-07-21 16:05:07.877+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading junit
+jenkins_1    | 2020-07-21 16:05:08.397+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: junit
+jenkins_1    | 2020-07-21 16:05:08.397+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-project on behalf of admin
+jenkins_1    | 2020-07-21 16:05:08.766+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-project
+jenkins_1    | 2020-07-21 16:05:09.106+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: matrix-project
+jenkins_1    | 2020-07-21 16:05:09.106+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of command-launcher on behalf of admin
+jenkins_1    | 2020-07-21 16:05:09.485+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading command-launcher
+jenkins_1    | 2020-07-21 16:05:09.492+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: command-launcher
+jenkins_1    | 2020-07-21 16:05:09.492+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of resource-disposer on behalf of admin
+jenkins_1    | 2020-07-21 16:05:09.874+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading resource-disposer
+jenkins_1    | 2020-07-21 16:05:09.981+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: resource-disposer
+jenkins_1    | 2020-07-21 16:05:09.981+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ws-cleanup on behalf of admin
+jenkins_1    | 2020-07-21 16:05:10.350+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ws-cleanup
+jenkins_1    | 2020-07-21 16:05:12.986+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ws-cleanup
+jenkins_1    | 2020-07-21 16:05:12.986+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ant on behalf of admin
+jenkins_1    | 2020-07-21 16:05:13.354+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ant
+jenkins_1    | 2020-07-21 16:05:13.362+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ant
+jenkins_1    | 2020-07-21 16:05:13.363+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of bouncycastle-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:13.751+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading bouncycastle-api
+jenkins_1    | 2020-07-21 16:05:18.843+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: bouncycastle-api
+jenkins_1    | 2020-07-21 16:05:18.843+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ace-editor on behalf of admin
+jenkins_1    | 2020-07-21 16:05:19.303+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ace-editor
+jenkins_1    | 2020-07-21 16:05:23.057+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ace-editor
+jenkins_1    | 2020-07-21 16:05:23.057+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of jquery-detached on behalf of admin
+jenkins_1    | 2020-07-21 16:05:23.416+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jquery-detached
+jenkins_1    | 2020-07-21 16:05:23.593+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: jquery-detached
+jenkins_1    | 2020-07-21 16:05:23.593+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-scm-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:24.096+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-scm-step
+jenkins_1    | 2020-07-21 16:05:24.204+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-scm-step
+jenkins_1    | 2020-07-21 16:05:24.204+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-cps on behalf of admin
+jenkins_1    | 2020-07-21 16:05:24.553+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-cps
+jenkins_1    | 2020-07-21 16:05:25.211+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-cps
+jenkins_1    | 2020-07-21 16:05:25.211+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-job on behalf of admin
+jenkins_1    | 2020-07-21 16:05:25.601+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-job
+jenkins_1    | 2020-07-21 16:05:25.917+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-job
+jenkins_1    | 2020-07-21 16:05:25.917+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of apache-httpcomponents-client-4-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:26.316+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading apache-httpcomponents-client-4-api
+jenkins_1    | 2020-07-21 16:05:27.172+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: apache-httpcomponents-client-4-api
+jenkins_1    | 2020-07-21 16:05:27.173+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of display-url-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:27.571+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading display-url-api
+jenkins_1    | 2020-07-21 16:05:27.577+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: display-url-api
+jenkins_1    | 2020-07-21 16:05:27.577+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of admin
+jenkins_1    | 2020-07-21 16:05:27.945+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mailer
+jenkins_1    | 2020-07-21 16:05:28.193+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: mailer
+jenkins_1    | 2020-07-21 16:05:28.194+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-basic-steps on behalf of admin
+jenkins_1    | 2020-07-21 16:05:28.571+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-basic-steps
+jenkins_1    | 2020-07-21 16:05:28.739+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-basic-steps
+jenkins_1    | 2020-07-21 16:05:28.739+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of gradle on behalf of admin
+jenkins_1    | 2020-07-21 16:05:29.098+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading gradle
+jenkins_1    | 2020-07-21 16:05:29.105+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: gradle
+jenkins_1    | 2020-07-21 16:05:29.105+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-milestone-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:29.486+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-milestone-step
+jenkins_1    | 2020-07-21 16:05:29.594+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-milestone-step
+jenkins_1    | 2020-07-21 16:05:29.594+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of snakeyaml-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:29.961+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading snakeyaml-api
+jenkins_1    | 2020-07-21 16:05:30.291+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: snakeyaml-api
+jenkins_1    | 2020-07-21 16:05:30.292+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of jackson2-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:30.724+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jackson2-api
+jenkins_1    | 2020-07-21 16:05:32.439+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: jackson2-api
+jenkins_1    | 2020-07-21 16:05:32.440+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-input-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:32.830+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-input-step
+jenkins_1    | 2020-07-21 16:05:32.916+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-input-step
+jenkins_1    | 2020-07-21 16:05:32.916+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:33.307+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-step
+jenkins_1    | 2020-07-21 16:05:33.414+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-step
+jenkins_1    | 2020-07-21 16:05:33.414+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-graph-analysis on behalf of admin
+jenkins_1    | 2020-07-21 16:05:33.813+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-graph-analysis
+jenkins_1    | 2020-07-21 16:05:33.921+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-graph-analysis
+jenkins_1    | 2020-07-21 16:05:33.921+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-rest-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:34.311+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-rest-api
+jenkins_1    | 2020-07-21 16:05:34.522+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-rest-api
+jenkins_1    | 2020-07-21 16:05:34.522+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of handlebars on behalf of admin
+jenkins_1    | 2020-07-21 16:05:34.912+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading handlebars
+jenkins_1    | 2020-07-21 16:05:35.023+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: handlebars
+jenkins_1    | 2020-07-21 16:05:35.023+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of momentjs on behalf of admin
+jenkins_1    | 2020-07-21 16:05:35.382+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading momentjs
+jenkins_1    | 2020-07-21 16:05:35.469+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: momentjs
+jenkins_1    | 2020-07-21 16:05:35.469+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-view on behalf of admin
+jenkins_1    | 2020-07-21 16:05:35.858+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-view
+jenkins_1    | 2020-07-21 16:05:36.179+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-view
+jenkins_1    | 2020-07-21 16:05:36.180+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-build-step on behalf of admin
+jenkins_1    | 2020-07-21 16:05:36.587+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-build-step
+jenkins_1    | 2020-07-21 16:05:36.593+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-build-step
+jenkins_1    | 2020-07-21 16:05:36.593+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:36.974+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-api
+jenkins_1    | 2020-07-21 16:05:38.565+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-api
+jenkins_1    | 2020-07-21 16:05:38.565+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-extensions on behalf of admin
+jenkins_1    | 2020-07-21 16:05:38.936+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-extensions
+jenkins_1    | 2020-07-21 16:05:38.942+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-extensions
+jenkins_1    | 2020-07-21 16:05:38.942+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of jsch on behalf of admin
+jenkins_1    | 2020-07-21 16:05:39.300+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading jsch
+jenkins_1    | 2020-07-21 16:05:39.711+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: jsch
+jenkins_1    | 2020-07-21 16:05:39.711+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-client on behalf of admin
+jenkins_1    | 2020-07-21 16:05:40.100+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-client
+jenkins_1    | 2020-07-21 16:05:41.909+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: git-client
+jenkins_1    | 2020-07-21 16:05:41.909+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of git-server on behalf of admin
+jenkins_1    | 2020-07-21 16:05:42.300+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git-server
+jenkins_1    | 2020-07-21 16:05:42.307+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: git-server
+jenkins_1    | 2020-07-21 16:05:42.307+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-cps-global-lib on behalf of admin
+jenkins_1    | 2020-07-21 16:05:42.674+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-cps-global-lib
+jenkins_1    | 2020-07-21 16:05:43.823+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-cps-global-lib
+jenkins_1    | 2020-07-21 16:05:43.823+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of branch-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:44.213+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading branch-api
+jenkins_1    | 2020-07-21 16:05:44.637+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: branch-api
+jenkins_1    | 2020-07-21 16:05:44.637+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-multibranch on behalf of admin
+jenkins_1    | 2020-07-21 16:05:44.995+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-multibranch
+jenkins_1    | 2020-07-21 16:05:45.164+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-multibranch
+jenkins_1    | 2020-07-21 16:05:45.164+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-tags-metadata on behalf of admin
+jenkins_1    | 2020-07-21 16:05:45.530+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-stage-tags-metadata
+jenkins_1    | 2020-07-21 16:05:45.536+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-tags-metadata
+jenkins_1    | 2020-07-21 16:05:45.536+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-model-definition on behalf of admin
+jenkins_1    | 2020-07-21 16:05:45.903+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-model-definition
+jenkins_1    | 2020-07-21 16:05:46.728+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-model-definition
+jenkins_1    | 2020-07-21 16:05:46.728+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of lockable-resources on behalf of admin
+jenkins_1    | 2020-07-21 16:05:47.097+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading lockable-resources
+jenkins_1    | 2020-07-21 16:05:47.185+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: lockable-resources
+jenkins_1    | 2020-07-21 16:05:47.185+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of workflow-aggregator on behalf of admin
+jenkins_1    | 2020-07-21 16:05:47.557+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading workflow-aggregator
+jenkins_1    | 2020-07-21 16:05:47.562+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: workflow-aggregator
+jenkins_1    | 2020-07-21 16:05:47.562+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of okhttp-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:47.942+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading okhttp-api
+jenkins_1    | 2020-07-21 16:05:48.470+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: okhttp-api
+jenkins_1    | 2020-07-21 16:05:48.470+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of github-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:48.852+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github-api
+jenkins_1    | 2020-07-21 16:05:49.700+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: github-api
+jenkins_1    | 2020-07-21 16:05:49.700+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of git on behalf of admin
+jenkins_1    | 2020-07-21 16:05:50.082+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading git
+jenkins_1    | 2020-07-21 16:05:50.716+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: git
+jenkins_1    | 2020-07-21 16:05:50.717+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of github on behalf of admin
+jenkins_1    | 2020-07-21 16:05:51.107+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github
+jenkins_1    | 2020-07-21 16:05:51.644+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: github
+jenkins_1    | 2020-07-21 16:05:51.644+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of github-branch-source on behalf of admin
+jenkins_1    | 2020-07-21 16:05:52.044+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading github-branch-source
+jenkins_1    | 2020-07-21 16:05:52.370+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: github-branch-source
+jenkins_1    | 2020-07-21 16:05:52.370+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-github-lib on behalf of admin
+jenkins_1    | 2020-07-21 16:05:52.741+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pipeline-github-lib
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-github-lib
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pipeline-stage-view on behalf of admin
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Pipeline: Stage View@2.13
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pipeline-stage-view
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of git on behalf of admin
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Git@4.3.0
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: git
+jenkins_1    | 2020-07-21 16:05:52.747+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of mapdb-api on behalf of admin
+jenkins_1    | 2020-07-21 16:05:53.129+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading mapdb-api
+jenkins_1    | 2020-07-21 16:05:53.552+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: mapdb-api
+jenkins_1    | 2020-07-21 16:05:53.552+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of subversion on behalf of admin
+jenkins_1    | 2020-07-21 16:05:53.933+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading subversion
+jenkins_1    | 2020-07-21 16:05:57.153+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: subversion
+jenkins_1    | 2020-07-21 16:05:57.153+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ssh-slaves on behalf of admin
+jenkins_1    | 2020-07-21 16:05:57.597+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ssh-slaves
+jenkins_1    | 2020-07-21 16:05:57.922+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ssh-slaves
+jenkins_1    | 2020-07-21 16:05:57.922+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of matrix-auth on behalf of admin
+jenkins_1    | 2020-07-21 16:05:58.330+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading matrix-auth
+jenkins_1    | 2020-07-21 16:05:58.544+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: matrix-auth
+jenkins_1    | 2020-07-21 16:05:58.544+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of pam-auth on behalf of admin
+jenkins_1    | 2020-07-21 16:05:58.917+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading pam-auth
+jenkins_1    | 2020-07-21 16:06:00.202+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: pam-auth
+jenkins_1    | 2020-07-21 16:06:00.202+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of ldap on behalf of admin
+jenkins_1    | 2020-07-21 16:06:00.558+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading ldap
+jenkins_1    | 2020-07-21 16:06:00.645+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: ldap
+jenkins_1    | 2020-07-21 16:06:00.645+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of email-ext on behalf of admin
+jenkins_1    | 2020-07-21 16:06:01.026+0000 [id=74]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading email-ext
+jenkins_1    | 2020-07-21 16:06:02.493+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: email-ext
+jenkins_1    | 2020-07-21 16:06:02.494+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of mailer on behalf of admin
+jenkins_1    | 2020-07-21 16:06:02.494+0000 [id=74]     INFO    h.m.UpdateCenter$InstallationJob#_run: Skipping duplicate install of: Mailer@1.32
+jenkins_1    | 2020-07-21 16:06:02.494+0000 [id=74]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: mailer
+jenkins_1    | 2020-07-21 16:06:02.494+0000 [id=74]     INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+jenkins_1    | 2020-07-21 16:06:05.915+0000 [id=74]     INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tasks.Ant.AntInstaller
+jenkins_1    | 2020-07-21 16:06:06.170+0000 [id=74]     INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.gradle.GradleInstaller
+jenkins_1    | 2020-07-21 16:06:07.326+0000 [id=74]     INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.tools.JDKInstaller
+jenkins_1    | 2020-07-21 16:06:07.376+0000 [id=79]     INFO    jenkins.InitReactorRunner$1#onAttained: Started initialization
+jenkins_1    | 2020-07-21 16:06:07.384+0000 [id=80]     INFO    jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+jenkins_1    | 2020-07-21 16:06:07.384+0000 [id=85]     INFO    jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+jenkins_1    | 2020-07-21 16:06:07.393+0000 [id=80]     INFO    jenkins.InitReactorRunner$1#onAttained: Started all plugins
+jenkins_1    | 2020-07-21 16:06:07.422+0000 [id=83]     INFO    jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+jenkins_1    | 2020-07-21 16:06:07.423+0000 [id=84]     INFO    jenkins.InitReactorRunner$1#onAttained: System config loaded
+jenkins_1    | 2020-07-21 16:06:07.425+0000 [id=84]     INFO    jenkins.InitReactorRunner$1#onAttained: System config adapted
+jenkins_1    | 2020-07-21 16:06:07.458+0000 [id=84]     INFO    jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+jenkins_1    | 2020-07-21 16:06:07.459+0000 [id=81]     INFO    jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+jenkins_1    | 2020-07-21 16:06:07.791+0000 [id=81]     INFO    jenkins.InitReactorRunner$1#onAttained: Completed initialization
+jenkins_1    | 2020-07-21 16:06:07.792+0000 [id=74]     INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 72 plugins in 1 min 20 sec
+jenkins_1    | 2020-07-21 16:21:37.225+0000 [id=17]     INFO    hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+jenkins_1    | 2020-07-21 16:21:37.225+0000 [id=17]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of maven-plugin for plugin conditional-buildstep
+jenkins_1    | 2020-07-21 16:21:37.226+0000 [id=17]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of javadoc for plugin maven-plugin
+jenkins_1    | 2020-07-21 16:21:37.226+0000 [id=17]     INFO    hudson.model.UpdateSite$Plugin#deploy: Adding dependent install of run-condition for plugin conditional-buildstep
+jenkins_1    | 2020-07-21 16:21:37.227+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of javadoc on behalf of admin
+jenkins_1    | 2020-07-21 16:21:37.686+0000 [id=88]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading javadoc
+jenkins_1    | 2020-07-21 16:21:37.774+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: javadoc
+jenkins_1    | 2020-07-21 16:21:37.774+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of maven-plugin on behalf of admin
+jenkins_1    | 2020-07-21 16:21:38.276+0000 [id=88]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading maven-plugin
+jenkins_1    | 2020-07-21 16:21:54.631+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: maven-plugin
+jenkins_1    | 2020-07-21 16:21:54.632+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of run-condition on behalf of admin
+jenkins_1    | 2020-07-21 16:21:55.065+0000 [id=88]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading run-condition
+jenkins_1    | 2020-07-21 16:21:55.307+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: run-condition
+jenkins_1    | 2020-07-21 16:21:55.308+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of conditional-buildstep on behalf of admin
+jenkins_1    | 2020-07-21 16:21:55.663+0000 [id=88]     INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading conditional-buildstep
+jenkins_1    | 2020-07-21 16:21:55.669+0000 [id=88]     INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: conditional-buildstep
+jenkins_1    | 2020-07-21 16:21:55.669+0000 [id=88]     INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+jenkins_1    | 2020-07-21 16:21:56.111+0000 [id=91]     INFO    jenkins.InitReactorRunner$1#onAttained: Started initialization
+jenkins_1    | 2020-07-21 16:21:56.114+0000 [id=95]     INFO    jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+jenkins_1    | 2020-07-21 16:21:56.119+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+jenkins_1    | 2020-07-21 16:21:56.120+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Started all plugins
+jenkins_1    | 2020-07-21 16:21:56.121+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+jenkins_1    | 2020-07-21 16:21:56.121+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: System config loaded
+jenkins_1    | 2020-07-21 16:21:56.123+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: System config adapted
+jenkins_1    | 2020-07-21 16:21:56.123+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+jenkins_1    | 2020-07-21 16:21:56.123+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+jenkins_1    | 2020-07-21 16:21:56.123+0000 [id=94]     INFO    jenkins.InitReactorRunner$1#onAttained: Completed initialization
+jenkins_1    | 2020-07-21 16:21:56.123+0000 [id=88]     INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 4 plugins in 18 sec
+jenkins_1    | 2020-07-21 16:22:37.106+0000 [id=99]     INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+jenkins_1    | 2020-07-21 16:22:37.107+0000 [id=99]     INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 0 ms
+jenkins_1    | 2020-07-21 16:23:09.624+0000 [id=10]     INFO    hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+jenkins_1    | 2020-07-21 16:23:09.625+0000 [id=100]    INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of dashboard-view on behalf of admin
+jenkins_1    | 2020-07-21 16:23:10.116+0000 [id=100]    INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading dashboard-view
+jenkins_1    | 2020-07-21 16:23:10.843+0000 [id=100]    INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: dashboard-view
+jenkins_1    | 2020-07-21 16:23:10.843+0000 [id=100]    INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+jenkins_1    | 2020-07-21 16:23:11.026+0000 [id=102]    INFO    jenkins.InitReactorRunner$1#onAttained: Started initialization
+jenkins_1    | 2020-07-21 16:23:11.027+0000 [id=106]    INFO    jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=103]    INFO    jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=105]    INFO    jenkins.InitReactorRunner$1#onAttained: Started all plugins
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=106]    INFO    jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=108]    INFO    jenkins.InitReactorRunner$1#onAttained: System config loaded
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=108]    INFO    jenkins.InitReactorRunner$1#onAttained: System config adapted
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=108]    INFO    jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+jenkins_1    | 2020-07-21 16:23:11.028+0000 [id=108]    INFO    jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+jenkins_1    | 2020-07-21 16:23:11.029+0000 [id=108]    INFO    jenkins.InitReactorRunner$1#onAttained: Completed initialization
+jenkins_1    | 2020-07-21 16:23:11.031+0000 [id=100]    INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 1 plugins in 1.4 sec
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:29:39 INFO  web[AXNyHwpUxfS0ABUyAAA9][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authgithub' version : 1.5.0.870 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'authsaml' version : 1.1.0.181 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'csharp' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'cssfamily' version : 1.1.1.1010 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'flex' version : 2.5.1.1831 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'go' version : 1.1.1.2000 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'jacoco' version : 1.0.2.475 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'java' version : 5.13.1.18282 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'javascript' version : 5.2.1.7778 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'kotlin' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ldap' version : 2.2.0.608 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'php' version : 3.2.0.4868 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'python' version : 1.14.1.3143 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'ruby' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmgit' version : 1.8.0.1574 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'scmsvn' version : 1.9.0.1295 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'sonarscala' version : 1.5.0.315 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'typescript' version : 1.9.0.3766 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'vbnet' version : 7.15.0.8572 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'web' version : 3.1.0.1615 has not been found on the update center.
+sonarqube_1  | 2020.07.21 16:30:03 INFO  web[AXNyHwpUxfS0ABUyAABB][o.s.u.c.UpdateCenter] The plugin 'xml' version : 2.0.1.2020 has not been found on the update center.
+jenkins_1    | 2020-07-21 16:31:11.635+0000 [id=17]     INFO    hudson.PluginManager#install: Starting installation of a batch of 1 plugins plus their dependencies
+jenkins_1    | 2020-07-21 16:31:11.636+0000 [id=110]    INFO    h.model.UpdateCenter$DownloadJob#run: Starting the installation of sonar on behalf of admin
+jenkins_1    | 2020-07-21 16:31:12.131+0000 [id=110]    INFO    h.m.UpdateCenter$UpdateCenterConfiguration#download: Downloading sonar
+jenkins_1    | 2020-07-21 16:31:21.239+0000 [id=110]    INFO    h.model.UpdateCenter$DownloadJob#run: Installation successful: sonar
+jenkins_1    | 2020-07-21 16:31:21.240+0000 [id=110]    INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completing installing of plugin batch…
+jenkins_1    | 2020-07-21 16:31:21.790+0000 [id=110]    INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.MsBuildSonarQubeRunnerInstaller
+jenkins_1    | 2020-07-21 16:31:21.880+0000 [id=110]    INFO    h.m.DownloadService$Downloadable#load: Obtained the updated data file for hudson.plugins.sonar.SonarRunnerInstaller
+jenkins_1    | 2020-07-21 16:31:21.902+0000 [id=113]    INFO    jenkins.InitReactorRunner$1#onAttained: Started initialization
+jenkins_1    | 2020-07-21 16:31:21.903+0000 [id=118]    INFO    jenkins.InitReactorRunner$1#onAttained: Listed all plugins
+jenkins_1    | 2020-07-21 16:31:21.905+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: Prepared all plugins
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: Started all plugins
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: Augmented all extensions
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: System config loaded
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: System config adapted
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: Loaded all jobs
+jenkins_1    | 2020-07-21 16:31:21.907+0000 [id=114]    INFO    jenkins.InitReactorRunner$1#onAttained: Configuration for all jobs updated
+jenkins_1    | 2020-07-21 16:31:21.913+0000 [id=118]    WARNING o.j.r.u.AnonymousClassWarnings#warn: Attempt to (de-)serialize synthetic class hudson.plugins.sonar.SonarGlobalConfiguration$$Lambda$227/1643516575 in file:/var/jenkins_home/plugins/sonar/WEB-INF/lib/sonar.jar; see: https://jenkins.io/redirect/serialization-of-anonymous-classes/
+jenkins_1    | 2020-07-21 16:31:21.922+0000 [id=119]    INFO    jenkins.InitReactorRunner$1#onAttained: Completed initialization
+jenkins_1    | 2020-07-21 16:31:21.922+0000 [id=110]    INFO    h.m.UpdateCenter$CompleteBatchJob#run: Completed installation of 1 plugins in 10 sec
+jenkins_1    | 2020-07-21 16:54:23.474+0000 [id=123]    INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Workspace clean-up
+jenkins_1    | 2020-07-21 16:54:23.475+0000 [id=123]    INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Workspace clean-up. 0 ms
+jenkins_1    | 2020-07-21 17:06:00.652+0000 [id=155]    INFO    h.triggers.SCMTrigger$Runner#run: SCM changes detected in FitNesse. Triggering  #1
+jenkins_1    | 2020-07-21 17:22:37.106+0000 [id=392]    INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+jenkins_1    | 2020-07-21 17:22:37.107+0000 [id=392]    INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 0 ms
+jenkins_1    | 2020-07-21 18:22:37.106+0000 [id=1095]   INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+jenkins_1    | 2020-07-21 18:22:37.108+0000 [id=1095]   INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 1 ms
+sonarqube_1  | 2020.07.21 18:23:44 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webgoat | type=REPORT | id=AXNynf4thoDrZSokjbXl | submitter=admin
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=487ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=7ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=10ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=76ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=901 | status=SUCCESS | time=119ms
+sonarqube_1  | 2020.07.21 18:23:45 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1429ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=16ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Detect file moves | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=75 | status=SUCCESS | time=28ms
+sonarqube_1  | 2020.07.21 18:23:46 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=92ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=14ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=127ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=16ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=14ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=32ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=8ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=13ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:23:47 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:23:47 WARN  es[][o.e.d.i.q.BoolQueryBuilder] Should clauses in the filter context will no longer automatically set the minimum should match to 1 in the next major version. You should group them in a [filter] clause or explicitly set [minimum_should_match] to 1 to restore this behavior in the next major version.
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=2793ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=24ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=11ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=398ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:23:50 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=49 | status=SUCCESS | time=15ms
+sonarqube_1  | 2020.07.21 18:23:56 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=26948 | status=SUCCESS | time=5848ms
+sonarqube_1  | 2020.07.21 18:23:56 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=23ms
+sonarqube_1  | 2020.07.21 18:23:56 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:23:58 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=2150 | updates=0 | merged=0 | untouched=0 | status=SUCCESS | time=2277ms
+sonarqube_1  | 2020.07.21 18:23:58 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:23:58 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 18:24:02 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=3723ms
+sonarqube_1  | 2020.07.21 18:24:02 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:24:02 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=14ms
+sonarqube_1  | 2020.07.21 18:24:02 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=21ms
+sonarqube_1  | 2020.07.21 18:24:02 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=279ms
+sonarqube_1  | 2020.07.21 18:24:05 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=2529ms
+sonarqube_1  | 2020.07.21 18:24:05 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 18:24:05 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:24:05 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:24:05 INFO  ce[AXNynf4thoDrZSokjbXl][o.s.c.t.CeWorkerImpl] Executed task | project=webgoat | type=REPORT | id=AXNynf4thoDrZSokjbXl | submitter=admin | status=SUCCESS | time=21297ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webgoat | type=REPORT | id=AXNyqiCJhoDrZSokjbXm | submitter=admin
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=383ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=7ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:00 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:01 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=901 | status=SUCCESS | time=402ms
+sonarqube_1  | 2020.07.21 18:37:01 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:37:02 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1509ms
+sonarqube_1  | 2020.07.21 18:37:02 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:37:02 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 18:37:03 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=593 | dbFiles=593 | addedFiles=0 | status=SUCCESS | time=286ms
+sonarqube_1  | 2020.07.21 18:37:03 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=75 | status=SUCCESS | time=13ms
+sonarqube_1  | 2020.07.21 18:37:03 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:03 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=34ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=1404ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=101ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=6ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=25ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=12ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:04 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=2809ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=185ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:07 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=74 | status=SUCCESS | time=9ms
+sonarqube_1  | 2020.07.21 18:37:14 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=38799 | status=SUCCESS | time=6343ms
+sonarqube_1  | 2020.07.21 18:37:14 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=14ms
+sonarqube_1  | 2020.07.21 18:37:14 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:15 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=0 | updates=7 | merged=0 | untouched=2143 | status=SUCCESS | time=1523ms
+sonarqube_1  | 2020.07.21 18:37:15 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 18:37:15 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:16 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=1263ms
+sonarqube_1  | 2020.07.21 18:37:16 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:16 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=19ms
+sonarqube_1  | 2020.07.21 18:37:17 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 18:37:17 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=360ms
+sonarqube_1  | 2020.07.21 18:37:19 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=1870ms
+sonarqube_1  | 2020.07.21 18:37:19 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 18:37:19 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:19 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 18:37:19 INFO  ce[AXNyqiCJhoDrZSokjbXm][o.s.c.t.CeWorkerImpl] Executed task | project=webgoat | type=REPORT | id=AXNyqiCJhoDrZSokjbXm | submitter=admin | status=SUCCESS | time=19004ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webgoat | type=REPORT | id=AXNyxxSAhoDrZSokjbXn | submitter=admin
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=338ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=10ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=6ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:37 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:38 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=901 | status=SUCCESS | time=396ms
+sonarqube_1  | 2020.07.21 19:08:38 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:38 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=398ms
+sonarqube_1  | 2020.07.21 19:08:38 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 19:08:38 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:08:39 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=593 | dbFiles=593 | addedFiles=0 | status=SUCCESS | time=278ms
+sonarqube_1  | 2020.07.21 19:08:39 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=75 | status=SUCCESS | time=12ms
+sonarqube_1  | 2020.07.21 19:08:39 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:39 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=29ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=1278ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=82ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=7ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:40 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=2647ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=132ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:43 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=74 | status=SUCCESS | time=8ms
+sonarqube_1  | 2020.07.21 19:08:48 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=38799 | status=SUCCESS | time=5454ms
+sonarqube_1  | 2020.07.21 19:08:48 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=16ms
+sonarqube_1  | 2020.07.21 19:08:48 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:50 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=0 | updates=6 | merged=0 | untouched=2144 | status=SUCCESS | time=1497ms
+sonarqube_1  | 2020.07.21 19:08:50 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:50 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:08:51 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=1142ms
+sonarqube_1  | 2020.07.21 19:08:51 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:51 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=21ms
+sonarqube_1  | 2020.07.21 19:08:51 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 19:08:51 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=317ms
+sonarqube_1  | 2020.07.21 19:08:53 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=1799ms
+sonarqube_1  | 2020.07.21 19:08:53 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:08:53 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:53 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:08:53 INFO  ce[AXNyxxSAhoDrZSokjbXn][o.s.c.t.CeWorkerImpl] Executed task | project=webgoat | type=REPORT | id=AXNyxxSAhoDrZSokjbXn | submitter=admin | status=SUCCESS | time=16309ms
+jenkins_1    | 2020-07-21 19:22:37.106+0000 [id=1503]   INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Started Periodic background build discarder
+jenkins_1    | 2020-07-21 19:22:37.107+0000 [id=1503]   INFO    hudson.model.AsyncPeriodicWork#lambda$doRun$0: Finished Periodic background build discarder. 0 ms
+jenkins_1    | 2020-07-21 19:45:11.200+0000 [id=1598]   INFO    o.j.p.workflow.job.WorkflowRun#finish: WebGoat Pipeline #1 completed: FAILURE
+jenkins_1    | 2020-07-21 19:49:43.566+0000 [id=1726]   INFO    o.j.p.workflow.job.WorkflowRun#finish: WebGoat Pipeline #2 completed: FAILURE
+jenkins_1    | 2020-07-21 19:50:09.970+0000 [id=1664]   INFO    o.j.p.workflow.job.WorkflowRun#finish: WebGoat Pipeline #3 completed: FAILURE
+jenkins_1    | 2020-07-21 19:51:52.834+0000 [id=1851]   INFO    o.j.p.workflow.job.WorkflowRun#finish: WebGoat Pipeline #4 completed: FAILURE
+jenkins_1    | 2020-07-21 19:54:56.611+0000 [id=1923]   INFO    o.j.p.workflow.job.WorkflowRun#finish: WebGoat Pipeline #5 completed: SUCCESS
+sonarqube_1  | 2020.07.21 19:54:56 INFO  ce[][o.s.c.t.CeWorkerImpl] Execute task | project=webgoat | type=REPORT | id=AXNy8X5FhoDrZSokjbXo
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Extract report | status=SUCCESS | time=332ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist scanner context | status=SUCCESS | time=8ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Propagate analysis warnings from scanner report | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Execute DB migrations for current project | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Generate analysis UUID | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load analysis metadata | status=SUCCESS | time=6ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Initialize | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Verify billing | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Build tree of components | components=901 | status=SUCCESS | time=385ms
+sonarqube_1  | 2020.07.21 19:54:57 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Validate project | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load quality profiles | status=SUCCESS | time=1508ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load Quality gate | status=SUCCESS | time=5ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load new code period | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Detect file moves | reportFiles=593 | dbFiles=593 | addedFiles=2 | movedFiles=0 | status=SUCCESS | time=279ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load duplications | duplications=75 | status=SUCCESS | time=13ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:54:59 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute size measures | status=SUCCESS | time=28ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute new coverage | status=SUCCESS | time=1208ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute coverage measures | status=SUCCESS | time=89ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute comment measures | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Copy custom measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute duplication measures | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute size measures on new code | status=SUCCESS | time=6ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute language distribution | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute test measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute complexity measures | status=SUCCESS | time=3ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Load measure computers | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:00 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute Quality Profile status | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Execute component visitors | status=SUCCESS | time=2635ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Checks executed after computation of measures | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute Quality Gate measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Compute Quality profile measures | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Generate Quality profile events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Generate Quality gate events | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist components | status=SUCCESS | time=170ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist analysis | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist analysis properties | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:03 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist measures | inserts=74 | status=SUCCESS | time=8ms
+sonarqube_1  | 2020.07.21 19:55:09 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist live measures | insertsOrUpdates=38798 | status=SUCCESS | time=5537ms
+sonarqube_1  | 2020.07.21 19:55:09 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist duplication data | insertsOrUpdates=0 | status=SUCCESS | time=14ms
+sonarqube_1  | 2020.07.21 19:55:09 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist new ad hoc Rules | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:10 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist issues | inserts=10 | updates=39 | merged=0 | untouched=2111 | status=SUCCESS | time=1541ms
+sonarqube_1  | 2020.07.21 19:55:10 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist project links | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:10 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist events | status=SUCCESS | time=2ms
+sonarqube_1  | 2020.07.21 19:55:12 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist sources | status=SUCCESS | time=1313ms
+sonarqube_1  | 2020.07.21 19:55:12 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Persist cross project duplications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:12 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Enable analysis | status=SUCCESS | time=8ms
+sonarqube_1  | 2020.07.21 19:55:12 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Update last usage date of quality profiles | status=SUCCESS | time=4ms
+sonarqube_1  | 2020.07.21 19:55:12 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Purge db | status=SUCCESS | time=263ms
+sonarqube_1  | 2020.07.21 19:55:14 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Index analysis | status=SUCCESS | time=1735ms
+sonarqube_1  | 2020.07.21 19:55:14 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Send issue notifications | newIssuesNotifs=0 | newIssuesDeliveries=0 | myNewIssuesNotifs=0 | myNewIssuesDeliveries=0 | changesNotifs=0 | changesDeliveries=0 | status=SUCCESS | time=1ms
+sonarqube_1  | 2020.07.21 19:55:14 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Publish task results | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:14 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.s.ComputationStepExecutor] Trigger refresh of Portfolios and Applications | status=SUCCESS | time=0ms
+sonarqube_1  | 2020.07.21 19:55:14 INFO  ce[AXNy8X5FhoDrZSokjbXo][o.s.c.t.CeWorkerImpl] Executed task | project=webgoat | type=REPORT | id=AXNy8X5FhoDrZSokjbXo | status=SUCCESS | time=17430ms
+
+
+==============================================================================================
+
+Using username "ubuntu".
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 5.3.0-1023-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Jul 21 16:42:16 UTC 2020
+
+  System load:                    0.0
+  Usage of /:                     12.0% of 29.02GB
+  Memory usage:                   27%
+  Swap usage:                     0%
+  Processes:                      136
+  Users logged in:                1
+  IP address for eth0:            172.31.38.247
+  IP address for docker0:         172.17.0.1
+  IP address for br-898486bb0c83: 172.18.0.1
+
+ * "If you've been waiting for the perfect Kubernetes dev solution for
+   macOS, the wait is over. Learn how to install Microk8s on macOS."
+
+   https://www.techrepublic.com/article/how-to-install-microk8s-on-macos/
+
+7 packages can be updated.
+7 updates are security updates.
+
+
+Last login: Tue Jul 21 15:41:09 2020 from 88.31.164.144
+ubuntu@ip-172-31-38-247:~$ sudo docker network ls
+NETWORK ID          NAME                 DRIVER              SCOPE
+898486bb0c83        18-19_absace_mynet   bridge              local
+815fab2081d2        bridge               bridge              local
+233f5db6a7f6        host                 host                local
+2862b2a72c56        none                 null                local
+ubuntu@ip-172-31-38-247:~$ ~docker exec -u 0 -it 18-19_absace_jenkins bash
+
+Command '~docker' not found, did you mean:
+
+  command 'kdocker' from deb kdocker
+  command 'docker' from deb docker.io
+
+Try: sudo apt install <deb name>
+
+ubuntu@ip-172-31-38-247:~$ sudo docker exec -u 0 -it 18-19_absace_jenkins bash
+Error: No such container: 18-19_absace_jenkins
+ubuntu@ip-172-31-38-247:~$ sudo docker exec -u 0 -it 18-19_absace_jenkins_1 bash                                     
+root@baf85fa2cc1d:/# pwd
+/
+root@baf85fa2cc1d:/# ls var/jenkins_home/tools/hudson.model.JDK/openjdk11/
+.timestamp  jdk-11.0.1/
+root@baf85fa2cc1d:/# ls var/jenkins_home/tools/hudson.model.JDK/openjdk11/jdk-11                                     .0.1/
+bin  conf  include  jmods  legal  lib  release
+root@baf85fa2cc1d:/# ^C
+root@baf85fa2cc1d:/# $JAVA_HOME
+bash: /usr/local/openjdk-8: Is a directory
+root@baf85fa2cc1d:/# JAVA_HOME="/var/jenkins_home/tools/hudson.model.JDK/openjdk                                     11/jdk-11.0.1/"
+root@baf85fa2cc1d:/# $JAVA_HOME
+bash: /var/jenkins_home/tools/hudson.model.JDK/openjdk11/jdk-11.0.1/: Is a direc                                     tory
+root@baf85fa2cc1d:/# ls -l var/jenkins_home/tools/hudson.plugins.sonar.SonarRunn                                     erInstallation/My_Sonar_Scanner/
+total 12
+drwxr-xr-x 2 jenkins jenkins 4096 Jul 21 18:20 bin
+drwxr-xr-x 2 jenkins jenkins 4096 Jul 21 18:20 conf
+drwxr-xr-x 2 jenkins jenkins 4096 Jul 21 18:20 lib
+root@baf85fa2cc1d:/#

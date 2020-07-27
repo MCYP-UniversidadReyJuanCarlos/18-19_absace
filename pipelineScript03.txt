@@ -5,7 +5,8 @@ pipeline {
 		workspace = pwd()
 	}
 	tools { 
-		maven 'maven363' 
+		maven 'maven363'
+		'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
 	}
 	stages {
 		stage('Checkout repository changes') {
@@ -26,10 +27,10 @@ pipeline {
 		stage('Docker Build') {
 			steps {
 				echo 'Compiling Code'
-				sh "mvn install -DskipTests"
+				sh "mvn clean install -DskipTests"
 				echo 'Compilated Code Succesful'
 				echo 'Building docker image'
-				sh "docker build -t webgoat/webgoat-8.0 ."
+				sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
 				echo 'Docker image builded'
 			}
 		}

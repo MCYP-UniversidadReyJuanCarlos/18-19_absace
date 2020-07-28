@@ -29,9 +29,9 @@ pipeline {
 				echo 'Compiling Code'
 				sh "mvn clean install -DskipTests"
 				echo 'Compilated Code Succesful'
-				echo 'Building docker image'
-				sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
-				echo 'Docker image builded'
+				//echo 'Building docker image'
+				//sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
+				//echo 'Docker image builded'
 			}
 		}
 	}

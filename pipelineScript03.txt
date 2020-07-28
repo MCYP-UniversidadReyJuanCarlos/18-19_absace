@@ -20,7 +20,7 @@ pipeline {
 		stage('SAST analysis') {
 			steps {
 				echo 'Performing SAST analysis to the code from the commit'
-				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/My_Sonar_Scanner/bin/sonar-scanner -X -Dsonar.host.url=http://34.243.249.112:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
+				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQubeScanner/bin/sonar-scanner -X -Dsonar.host.url=http://54.229.59.223:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
 				echo 'SAST Finished!!!'
 			}
 		}
@@ -32,6 +32,16 @@ pipeline {
 				//echo 'Building docker image'
 				//sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
 				//echo 'Docker image builded'
+			}
+		}
+		stage('Dependency analysis') {
+			steps {
+				echo 'Performing Code Dependency analysis from the commit'
+				dependencyCheck additionalArguments: '', odcInstallation: 'dependencyCheckOWASP'
+				//dependencyCheckAnalyzer datadir: 'dependency-check-data', hintsFile: '', includeCsvReports: false, includeHtmlReports: true, includeJsonReports: true, includeVulnReports: true, isAutoupdateDisabled: false, outdir: '.', scanpath: '', skipOnScmChange: false, skipOnUpstreamChange: false, suppressionFile: '', zipExtensions: ''
+				echo 'Finished!!!'
+				dependencyCheckPublisher pattern: 'dependency-check-report.xml'
+				echo 'Publishing results...'
 			}
 		}
 	}

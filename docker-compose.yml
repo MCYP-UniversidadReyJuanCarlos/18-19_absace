@@ -21,7 +21,7 @@ services:
       - mynet
   clair:
     image: quay.io/coreos/clair:latest
-    command: -config=/config/config.yaml
+    command: -config=./config/config.yaml
     ports:
       - 6060:6060
       - 6061:6061
@@ -29,8 +29,12 @@ services:
       - postgres
     volumes:
       - type: bind
-        source: $PWD/clair_config
+        source: ./clair_config
         target: /config
+    depends_on: 
+      postgres:
+        condition: service_started
+    command: [--log-level=debug, --config, /config/config.yml]
     networks:
       - mynet
     restart: on-failure

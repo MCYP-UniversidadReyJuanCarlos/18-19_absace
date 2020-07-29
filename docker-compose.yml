@@ -19,13 +19,27 @@ services:
       - 9000:9000
     networks:
       - mynet
-  zap:
-    image: owasp/zap2docker-weekly
+  clair:
+    image: quay.io/coreos/clair:latest
+    command: -config=/config/config.yaml
     ports:
-      - 8000:8000
-    entrypoint: zap-x.sh -daemon -host 0.0.0.0 -port 8000 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.key=5364864132243598723485
+      - 6060:6060
+      - 6061:6061
+    depends_on:
+      - postgres
     volumes:
-      - zap:/zap/data
+      - type: bind
+        source: $PWD/clair_config
+        target: /config
+    networks:
+      - mynet
+    restart: on-failure
+  postgres:
+    image: postgres:9.6
+    networks:
+      - mynet
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
 networks:
   mynet:
     driver: bridge

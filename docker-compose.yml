@@ -34,7 +34,6 @@ services:
     depends_on: 
       postgres:
         condition: service_started
-    command: [--log-level=debug, --config, /config/config.yml]
     networks:
       - mynet
     restart: on-failure

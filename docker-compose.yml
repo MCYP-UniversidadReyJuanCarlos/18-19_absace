@@ -2,8 +2,9 @@ version: "3.8"
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts
-    privileged: true
+    #image: jenkins/jenkins:lts
+    image: trion/jenkins-docker-client
+    #privileged: true
     ports:
       - 8080:8080
       - 50000:50000
@@ -19,7 +20,6 @@ services:
       - 9000:9000
     networks:
       - mynet
-
 networks:
   mynet:
     driver: bridge

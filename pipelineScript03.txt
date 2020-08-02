@@ -12,15 +12,15 @@ pipeline {
 		stage('Checkout repository changes') {
 			steps {
 				echo 'Downloading the code from GitHub'
-				checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
-				doGenerateSubmoduleConfigurations: false, extensions: [], 
-				submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/WebGoat/WebGoat']]])
+				checkout([$class: 'GitSCM', branches: [[name: '*/develop']],
+				doGenerateSubmoduleConfigurations: false, extensions: [],
+				submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Abrin09/WebGoat.git']]])
 			}
 		}
 		stage('SAST analysis') {
 			steps {
 				echo 'Performing SAST analysis to the code from the commit'
-				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQubeScanner/bin/sonar-scanner -X -Dsonar.host.url=http://54.229.59.223:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
+				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQubeScanner/bin/sonar-scanner -X -Dsonar.host.url=http://34.245.15.238:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
 				echo 'SAST Finished!!!'
 			}
 		}
@@ -29,9 +29,9 @@ pipeline {
 				echo 'Compiling Code'
 				sh "mvn clean install -DskipTests"
 				echo 'Compilated Code Succesful'
-				//echo 'Building docker image'
-				//sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
-				//echo 'Docker image builded'
+				echo 'Building docker image'
+				sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
+				echo 'Docker image builded'
 			}
 		}
 		stage('Dependency analysis') {

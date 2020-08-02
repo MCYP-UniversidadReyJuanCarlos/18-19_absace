@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
   jenkins:
-    image: jenkins/jenkins:lts
-    #image: trion/jenkins-docker-client
+    #image: jenkins/jenkins:lts
+    image: trion/jenkins-docker-client
     #privileged: true
-    #build:
-    #  dockerfile: jenkins-dockerfile
-    #  context: .
+    build:
+      dockerfile: jenkins-dockerfile
+      context: .
     ports:
       - 8080:8080
       - 50000:50000

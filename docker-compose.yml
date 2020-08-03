@@ -2,9 +2,6 @@ version: "3.8"
 
 services:
   jenkins:
-    #image: jenkins/jenkins:lts
-    #image: trion/jenkins-docker-client
-    #privileged: true
     build:
       dockerfile: jenkins-dockerfile
       context: .
@@ -23,6 +20,28 @@ services:
       - 9000:9000
     networks:
       - mynet
+  clair:
+    image: quay.io/coreos/clair:latest
+    command: -config=/config/config.yaml
+    ports:
+      - "6060:6060"
+      - "6061:6061"
+    depends_on:
+      - postgres
+    volumes:
+      - type: bind
+        source: $PWD/clair_config
+        target: /config
+    networks:
+      - mynet
+    restart: on-failure
+  postgres:
+    image: postgres:9.6
+    networks:
+      - mynet
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+
 networks:
   mynet:
     driver: bridge

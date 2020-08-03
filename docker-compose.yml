@@ -41,7 +41,18 @@ services:
       - mynet
     environment:
       - POSTGRES_HOST_AUTH_METHOD=trust
-
+  clairctl:
+    image: jgsqware/clairctl:latest
+    restart: unless-stopped
+    environment: 
+      - DOCKER_API_VERSION=1.24
+    volumes:
+      - ./docker-compose-data/clairctl-reports/:/reports/:rw
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on: 
+      - clair
+    user: root
+    
 networks:
   mynet:
     driver: bridge

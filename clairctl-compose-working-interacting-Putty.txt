@@ -1,0 +1,486 @@
+Using username "ubuntu".
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 5.3.0-1032-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Tue Aug  4 18:34:55 UTC 2020
+
+  System load:                    0.49
+  Usage of /:                     40.1% of 29.02GB
+  Memory usage:                   5%
+  Swap usage:                     0%
+  Processes:                      143
+  Users logged in:                1
+  IP address for eth0:            172.31.41.31
+  IP address for br-3f052ecb7750: 172.18.0.1
+  IP address for br-8433c55209a4: 172.19.0.1
+  IP address for docker0:         172.17.0.1
+  IP address for br-a66a8ffeed78: 172.20.0.1
+
+  => There is 1 zombie process.
+
+ * Are you ready for Kubernetes 1.19? It's nearly here! Try RC3 with
+   sudo snap install microk8s --channel=1.19/candidate --classic
+
+   https://www.microk8s.io/ has docs and details.
+
+7 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Tue Aug  4 17:27:58 2020 from 79.149.56.217
+ubuntu@ip-172-31-41-31:~$ mkdir clair_probando
+ubuntu@ip-172-31-41-31:~$ cd clair_probando/
+ubuntu@ip-172-31-41-31:~/clair_probando$ git clone git@github.com:jgsqware/clairctl.git $GOPATH/src/github.com/jgsqware/clairctl
+fatal: could not create leading directories of '/src/github.com/jgsqware/clairctl': Permission denied
+ubuntu@ip-172-31-41-31:~/clair_probando$ https://github.com/jgsqware/clairctl.githttps://github.com/jgsqware/clairctl.git^C
+ubuntu@ip-172-31-41-31:~/clair_probando$ git clone https://github.com/jgsqware/clairctl.git $GOPATH/src/github.com/jgsqware/clairctl
+fatal: could not create leading directories of '/src/github.com/jgsqware/clairctl': Permission denied
+ubuntu@ip-172-31-41-31:~/clair_probando$ curl -L https://raw.githubusercontent.com/jgsqware/clairctl/master/install.sh | sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   315  100   315    0     0   1559      0 --:--:-- --:--:-- --:--:--  1559
+sh: 4: [[: not found
+linux
+386
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0 39.2M    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Warning: Failed to create the file /usr/local/bin/clairctl: Permission denied
+  0 39.2M    0 16360    0     0  35798      0  0:19:10 --:--:--  0:19:10 35720
+curl: (23) Failed writing body (0 != 16360)
+chmod: cannot access '/usr/local/bin/clairctl': No such file or directory
+ubuntu@ip-172-31-41-31:~/clair_probando$ ls -la
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Aug  4 18:36 .
+drwxr-xr-x 7 ubuntu ubuntu 4096 Aug  4 18:36 ..
+ubuntu@ip-172-31-41-31:~/clair_probando$ git clone https://github.com/jgsqware/clairctl.git
+Cloning into 'clairctl'...
+remote: Enumerating objects: 10053, done.
+remote: Total 10053 (delta 0), reused 0 (delta 0), pack-reused 10053
+Receiving objects: 100% (10053/10053), 25.41 MiB | 10.02 MiB/s, done.
+Resolving deltas: 100% (2039/2039), done.
+ubuntu@ip-172-31-41-31:~/clair_probando$ docker-compose up
+ERROR:
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml
+
+ubuntu@ip-172-31-41-31:~/clair_probando$ sudo docker-compose up
+ERROR:
+        Can't find a suitable configuration file in this directory or any
+        parent. Are you in the right directory?
+
+        Supported filenames: docker-compose.yml, docker-compose.yaml
+
+ubuntu@ip-172-31-41-31:~/clair_probando$ ls -la
+total 12
+drwxrwxr-x  3 ubuntu ubuntu 4096 Aug  4 18:43 .
+drwxr-xr-x  7 ubuntu ubuntu 4096 Aug  4 18:36 ..
+drwxrwxr-x 14 ubuntu ubuntu 4096 Aug  4 18:43 clairctl
+ubuntu@ip-172-31-41-31:~/clair_probando$ cd clairctl/
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose up
+Creating network "clairctl_default" with the default driver
+Pulling clair (quay.io/coreos/clair:v2.0.0)...
+v2.0.0: Pulling from coreos/clair
+d5d0715331fc: Pull complete
+348d62463ea3: Pull complete
+4dd2013714b5: Pull complete
+3294762fbe07: Pull complete
+ed432928070d: Pull complete
+0cd0c535d51b: Pull complete
+a3ed95caeb02: Pull complete
+e6d11207b3fa: Pull complete
+23e42cd83587: Pull complete
+Digest: sha256:ce18253e6a5d883389f73e3f78497297da5ab774fb74795b80f8935f4c420e46
+Status: Downloaded newer image for quay.io/coreos/clair:v2.0.0
+Creating clairctl_postgres_1 ... done
+Creating clairctl_clair_1    ... done
+Creating clairctl_clairctl_1 ... done
+Attaching to clairctl_postgres_1, clairctl_clair_1, clairctl_clairctl_1
+clair_1     | {"Event":"pgsql: could not open database: dial tcp 172.21.0.2:5432: getsockopt: connection refused","Level":"fatal","Location":"main.go:96","Time":"2020-08-04 18:45:37.876807"}
+postgres_1  | The files belonging to this database system will be owned by user "postgres".
+postgres_1  | This user must also own the server process.
+postgres_1  |
+postgres_1  | The database cluster will be initialized with locale "en_US.utf8".
+postgres_1  | The default database encoding has accordingly been set to "UTF8".
+postgres_1  | The default text search configuration will be set to "english".
+postgres_1  |
+postgres_1  | Data page checksums are disabled.
+postgres_1  |
+postgres_1  | fixing permissions on existing directory /var/lib/postgresql/data ... ok
+postgres_1  | creating subdirectories ... ok
+postgres_1  | selecting default max_connections ... 100
+postgres_1  | selecting default shared_buffers ... 128MB
+postgres_1  | selecting default timezone ... Etc/UTC
+postgres_1  | selecting dynamic shared memory implementation ... posix
+postgres_1  | creating configuration files ... ok
+postgres_1  | running bootstrap script ... ok
+clairctl_clair_1 exited with code 1
+postgres_1  | performing post-bootstrap initialization ... ok
+postgres_1  | syncing data to disk ...
+postgres_1  | WARNING: enabling "trust" authentication for local connections
+postgres_1  | You can change this by editing pg_hba.conf or using the option -A, or
+postgres_1  | --auth-local and --auth-host, the next time you run initdb.
+postgres_1  | ok
+postgres_1  |
+postgres_1  | Success. You can now start the database server using:
+postgres_1  |
+postgres_1  |     pg_ctl -D /var/lib/postgresql/data -l logfile start
+postgres_1  |
+postgres_1  | waiting for server to start....LOG:  database system was shut down at 2020-08-04 18:45:39 UTC
+postgres_1  | LOG:  MultiXact member wraparound protections are now enabled
+postgres_1  | LOG:  autovacuum launcher started
+postgres_1  | LOG:  database system is ready to accept connections
+clairctl_clair_1 exited with code 1
+postgres_1  |  done
+postgres_1  | server started
+postgres_1  | CREATE DATABASE
+postgres_1  |
+postgres_1  |
+postgres_1  | /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+postgres_1  |
+postgres_1  | LOG:  received fast shutdown request
+postgres_1  | waiting for server to shut down....LOG:  aborting any active transactions
+postgres_1  | LOG:  autovacuum launcher shutting down
+postgres_1  | LOG:  shutting down
+postgres_1  | LOG:  database system is shut down
+clairctl_clair_1 exited with code 1
+postgres_1  |  done
+postgres_1  | server stopped
+postgres_1  |
+postgres_1  | PostgreSQL init process complete; ready for start up.
+postgres_1  |
+postgres_1  | LOG:  database system was shut down at 2020-08-04 18:45:40 UTC
+postgres_1  | LOG:  MultiXact member wraparound protections are now enabled
+postgres_1  | LOG:  autovacuum launcher started
+postgres_1  | LOG:  database system is ready to accept connections
+clair_1     | {"Event":"database migration ran successfully","Level":"info","Location":"pgsql.go:223","Time":"2020-08-04 18:45:43.308075"}
+clair_1     | {"Event":"starting health API","Level":"info","Location":"api.go:85","Time":"2020-08-04 18:45:43.308285","port":6061}
+clair_1     | {"Event":"starting main API","Level":"info","Location":"api.go:52","Time":"2020-08-04 18:45:43.308268","port":6060}
+clair_1     | {"Event":"updater service started","Level":"info","Location":"updater.go:80","Time":"2020-08-04 18:45:43.308462","lock identifier":"5285cf78-a835-4eaf-a46c-4ba9d4efd36b"}
+clair_1     | {"Event":"notifier service is disabled","Level":"info","Location":"notifier.go:77","Time":"2020-08-04 18:45:43.308851"}
+clair_1     | {"Event":"attempting to obtain update lock","Level":"debug","Location":"updater.go:99","Time":"2020-08-04 18:45:43.309556"}
+clair_1     | {"Event":"updating vulnerabilities","Level":"info","Location":"updater.go:167","Time":"2020-08-04 18:45:43.311223"}
+clair_1     | {"Event":"fetching vulnerability updates","Level":"info","Location":"updater.go:213","Time":"2020-08-04 18:45:43.311256"}
+clair_1     | {"Event":"Start fetching vulnerabilities","Level":"info","Location":"rhel.go:92","Time":"2020-08-04 18:45:43.311350","package":"RHEL"}
+clair_1     | {"Event":"Start fetching vulnerabilities","Level":"info","Location":"ubuntu.go:88","Time":"2020-08-04 18:45:43.311431","package":"Ubuntu"}
+clair_1     | {"Event":"Start fetching vulnerabilities","Level":"info","Location":"debian.go:63","Time":"2020-08-04 18:45:43.311488","package":"Debian"}
+clair_1     | {"Event":"Start fetching vulnerabilities","Level":"info","Location":"oracle.go:119","Time":"2020-08-04 18:45:43.311576","package":"Oracle Linux"}
+clair_1     | {"Event":"Start fetching vulnerabilities","Level":"info","Location":"alpine.go:52","Time":"2020-08-04 18:45:43.312001","package":"Alpine"}
+clair_1     | {"Event":"could not branch Ubuntu repository","Level":"error","Location":"ubuntu.go:177","Time":"2020-08-04 18:45:43.755312","error":"exit status 3","output":"bzr: ERROR: Not a branch: \"https://launchpad.net/ubuntu-cve-tracker/\".\n"}
+clair_1     | {"Event":"an error occured when fetching update","Level":"error","Location":"updater.go:220","Time":"2020-08-04 18:45:43.755384","error":"could not download requested resource","updater name":"ubuntu"}
+clair_1     | {"Event":"could not pull alpine-secdb repository","Level":"error","Location":"alpine.go:186","Time":"2020-08-04 18:45:43.973626","error":"exit status 128","output":"Cloning into '.'...\nfatal: unable to update url base from redirection:\n  asked for: https://git.alpinelinux.org/cgit/alpine-secdb/info/refs?service=git-upload-pack\n   redirect: https://github.com/alpinelinux/alpine-secdb\n"}
+clair_1     | {"Event":"an error occured when fetching update","Level":"error","Location":"updater.go:220","Time":"2020-08-04 18:45:43.974274","error":"could not download requested resource","updater name":"alpine"}
+clair_1     | {"Event":"Debian bullseye is not mapped to any version number (eg. Jessie-\u003e8). Please update me.","Level":"warning","Location":"debian.go:128","Time":"2020-08-04 18:45:44.290642"}
+clair_1     | {"Event":"Debian buster is not mapped to any version number (eg. Jessie-\u003e8). Please update me.","Level":"warning","Location":"debian.go:128","Time":"2020-08-04 18:45:44.290700"}
+clair_1     | {"Event":"finished fetching","Level":"info","Location":"updater.go:227","Time":"2020-08-04 18:45:44.290723","updater name":"debian"}
+clair_1     | {"Event":"could not decode RHEL's XML","Level":"error","Location":"rhel.go:162","Time":"2020-08-04 18:45:46.730103","error":"XML syntax error on line 8: element \u003cP\u003e closed by \u003c/BODY\u003e"}
+clair_1     | {"Event":"an error occured when fetching update","Level":"error","Location":"updater.go:220","Time":"2020-08-04 18:45:46.730235","error":"updater/fetchers: could not parse","updater name":"rhel"}
+clairctl_clairctl_1 exited with code 137
+clair_1     | {"Event":"Received interruption, gracefully stopping ...","Level":"info","Location":"main.go:116","Time":"2020-08-04 18:53:59.575504"}
+clair_1     | {"Event":"main API stopped","Level":"info","Location":"api.go:74","Time":"2020-08-04 18:53:59.575613"}
+clair_1     | {"Event":"health API stopped","Level":"info","Location":"api.go:98","Time":"2020-08-04 18:53:59.575705"}
+clair_1     | {"Event":"updater service stopped","Level":"info","Location":"updater.go:159","Time":"2020-08-04 18:53:59.577147"}
+clairctl_clair_1 exited with code 0
+clairctl_clair_1 exited with code 0
+postgres_1  | LOG:  received smart shutdown request
+postgres_1  | LOG:  autovacuum launcher shutting down
+postgres_1  | LOG:  shutting down
+postgres_1  | LOG:  database system is shut down
+clairctl_postgres_1 exited with code 0
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ pwd
+/home/ubuntu/clair_probando/clairctl
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl health
+
+Clair: ✔
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l imiell/bad-dockerfile
+
+Image: /imiell/bad-dockerfile:latest
+ 20 layers found
+
+  ➜ Analysis [64dfb24359bf] found 0 vulnerabilities.
+  ➜ Analysis [e91a3fa66937] found 0 vulnerabilities.
+  ➜ Analysis [c1a3264f30ff] found 0 vulnerabilities.
+  ➜ Analysis [74ae1b401beb] found 0 vulnerabilities.
+  ➜ Analysis [dc849175b7d7] found 0 vulnerabilities.
+  ➜ Analysis [6b1453c765e9] found 0 vulnerabilities.
+  ➜ Analysis [1a6b15cb4451] found 0 vulnerabilities.
+  ➜ Analysis [eaaf4885f570] found 0 vulnerabilities.
+  ➜ Analysis [126b2a77ca35] found 0 vulnerabilities.
+  ➜ Analysis [7721f782f68d] found 0 vulnerabilities.
+  ➜ Analysis [584d61e2a7a0] found 0 vulnerabilities.
+  ➜ Analysis [a65231aa2761] found 0 vulnerabilities.
+  ➜ Analysis [5143ee83b176] found 0 vulnerabilities.
+  ➜ Analysis [177dbf2e036a] found 0 vulnerabilities.
+  ➜ Analysis [c14d24f30ae0] found 0 vulnerabilities.
+  ➜ Analysis [d2de7387e478] found 0 vulnerabilities.
+  ➜ Analysis [7a5cb82881a3] found 0 vulnerabilities.
+  ➜ Analysis [44f47b929019] found 0 vulnerabilities.
+  ➜ Analysis [ae3c16a276a7] found 0 vulnerabilities.
+  ➜ Analysis [216168069a51] found 0 vulnerabilities.
+
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l jenkins/jenkins
+client quit unexpectedly
+2020-08-04 18:57:29.114071 C | cmd: retrieving manifest for "jenkins/jenkins": cannot save image jenkins/jenkins:latest: Error response from daemon: reference does not exist
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker images
+REPOSITORY                     TAG                       IMAGE ID            CREATED             SIZE
+arminc/clair-db                latest                    4b8387ec1be8        4 hours ago         618MB
+webgoat-abrin09                5                         e984578d31cf        47 hours ago        380MB
+webgoat-abrin09                4                         6c9d90629ab8        47 hours ago        380MB
+webgoat-abrin09                3                         dc3e04149a38        47 hours ago        380MB
+<none>                         <none>                    9c5dc08aceca        47 hours ago        292MB
+18-19_absace_jenkins           latest                    a408094dfebe        47 hours ago        1.41GB
+sonarqube                      lts                       e1ed619be9f7        6 days ago          484MB
+jenkins/jenkins                lts                       135a0d19f757        7 days ago          667MB
+postgres                       9.6                       3861a6b72431        12 days ago         200MB
+hello-world                    latest                    bf756fb1ae65        7 months ago        13.3kB
+nordri/clair-scanner           latest                    6864bed43de3        14 months ago       149MB
+quay.io/coreos/clair           latest                    79f851f41934        17 months ago       355MB
+openjdk                        11.0.1-jre-slim-stretch   49b31a72a85a        18 months ago       274MB
+debian                         9.5                       be2868bebaba        21 months ago       101MB
+registry.mydomain.com/debian   9.5                       be2868bebaba        21 months ago       101MB
+imiell/bad-dockerfile          latest                    abd4f451ddb7        2 years ago         1.08GB
+jgsqware/clairctl              latest                    0a13af3e97a0        3 years ago         43.8MB
+quay.io/coreos/clair           v2.0.0                    c5ec68ce85d5        3 years ago         387MB
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l 18-19_absace_jenkins
+
+Image: /18-19_absace_jenkins:latest
+ 24 layers found
+
+  ➜ Analysis [d359f2aee31f] found 0 vulnerabilities.
+  ➜ Analysis [3649e7ca9d81] found 0 vulnerabilities.
+  ➜ Analysis [3365819f3e82] found 0 vulnerabilities.
+  ➜ Analysis [eae0617355cf] found 0 vulnerabilities.
+  ➜ Analysis [eff71bfec501] found 0 vulnerabilities.
+  ➜ Analysis [b01b945fe9cc] found 0 vulnerabilities.
+  ➜ Analysis [d9df4542817c] found 0 vulnerabilities.
+  ➜ Analysis [ac477103f47d] found 0 vulnerabilities.
+  ➜ Analysis [ff7461221be9] found 0 vulnerabilities.
+  ➜ Analysis [eb6983abe31d] found 0 vulnerabilities.
+  ➜ Analysis [0b41f504e98e] found 0 vulnerabilities.
+  ➜ Analysis [bc3812016267] found 0 vulnerabilities.
+  ➜ Analysis [c845da09327c] found 0 vulnerabilities.
+  ➜ Analysis [4b912b2faa35] found 0 vulnerabilities.
+  ➜ Analysis [9a501fec44a8] found 0 vulnerabilities.
+  ➜ Analysis [426b4a6c0194] found 0 vulnerabilities.
+  ➜ Analysis [5ce4d85ef8f8] found 0 vulnerabilities.
+  ➜ Analysis [c7cfd2580319] found 0 vulnerabilities.
+  ➜ Analysis [b6f61e19230d] found 0 vulnerabilities.
+  ➜ Analysis [c45676f7f489] found 0 vulnerabilities.
+  ➜ Analysis [899b5323a32d] found 0 vulnerabilities.
+  ➜ Analysis [75215e281909] found 0 vulnerabilities.
+  ➜ Analysis [60693404063f] found 0 vulnerabilities.
+  ➜ Analysis [a473c55f2602] found 0 vulnerabilities.
+
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                              NAMES
+b75c55b616b5        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     4 minutes ago       Up 4 minutes        44480/tcp                          clairctl_clairctl_1
+b620b858a07a        quay.io/coreos/clair:v2.0.0   "/clair --log-level=…"   4 minutes ago       Up 4 minutes        6060-6061/tcp                      clairctl_clair_1
+b42d66df8410        postgres:9.6                  "docker-entrypoint.s…"   14 minutes ago      Up 5 minutes        5432/tcp                           clairctl_postgres_1
+4c374299538a        nordri/clair-scanner:latest   "/bin/bash"              2 hours ago         Up 2 hours                                             clair-scanner
+07a060fe65b5        quay.io/coreos/clair:latest   "/clair -config /con…"   2 hours ago         Up 2 hours          0.0.0.0:6060-6061->6060-6061/tcp   clair
+68ca00b0ef0e        arminc/clair-db:latest        "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:5432->5432/tcp             clair-postgres
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PORTS                              NAMES
+b75c55b616b5        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     5 minutes ago       Up 5 minutes        44480/tcp                          clairctl_clairctl_1
+b620b858a07a        quay.io/coreos/clair:v2.0.0   "/clair --log-level=…"   5 minutes ago       Up 5 minutes        6060-6061/tcp                      clairctl_clair_1
+b42d66df8410        postgres:9.6                  "docker-entrypoint.s…"   14 minutes ago      Up 5 minutes        5432/tcp                           clairctl_postgres_1
+4c374299538a        nordri/clair-scanner:latest   "/bin/bash"              2 hours ago         Up 2 hours                                             clair-scanner
+07a060fe65b5        quay.io/coreos/clair:latest   "/clair -config /con…"   2 hours ago         Up 2 hours          0.0.0.0:6060-6061->6060-6061/tcp   clair
+68ca00b0ef0e        arminc/clair-db:latest        "docker-entrypoint.s…"   2 hours ago         Up 2 hours          0.0.0.0:5432->5432/tcp             clair-postgres
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker images -a
+REPOSITORY                     TAG                       IMAGE ID            CREATED             SIZE
+arminc/clair-db                latest                    4b8387ec1be8        4 hours ago         618MB
+webgoat-abrin09                5                         e984578d31cf        47 hours ago        380MB
+<none>                         <none>                    d522056ee764        47 hours ago        380MB
+<none>                         <none>                    bf826e84e20e        47 hours ago        380MB
+<none>                         <none>                    51480c496902        47 hours ago        380MB
+<none>                         <none>                    6f8ee84652ba        47 hours ago        380MB
+<none>                         <none>                    f3bb8ad4725b        47 hours ago        380MB
+<none>                         <none>                    5e4d038a6be7        47 hours ago        380MB
+webgoat-abrin09                4                         6c9d90629ab8        47 hours ago        380MB
+<none>                         <none>                    8a90a2ed8978        47 hours ago        380MB
+<none>                         <none>                    1f43a0ed5b02        47 hours ago        380MB
+webgoat-abrin09                3                         dc3e04149a38        47 hours ago        380MB
+<none>                         <none>                    7f4a9a3cad2f        47 hours ago        380MB
+<none>                         <none>                    b5abd432979c        47 hours ago        380MB
+<none>                         <none>                    d862f387a937        47 hours ago        380MB
+<none>                         <none>                    b5efcb794936        47 hours ago        380MB
+<none>                         <none>                    7778b758c37a        47 hours ago        292MB
+<none>                         <none>                    8c279bace0d9        47 hours ago        292MB
+<none>                         <none>                    29b6c1b57aee        47 hours ago        292MB
+<none>                         <none>                    1776c7d1d445        47 hours ago        274MB
+<none>                         <none>                    519c5a9cc1dc        47 hours ago        292MB
+<none>                         <none>                    1f77cb05be99        47 hours ago        292MB
+<none>                         <none>                    9c5dc08aceca        47 hours ago        292MB
+<none>                         <none>                    b53b13efbff3        47 hours ago        274MB
+18-19_absace_jenkins           latest                    a408094dfebe        47 hours ago        1.41GB
+<none>                         <none>                    f09c41bd3e4d        47 hours ago        1.41GB
+<none>                         <none>                    29c826057355        47 hours ago        850MB
+<none>                         <none>                    585906738642        47 hours ago        850MB
+<none>                         <none>                    522f157ccf6a        47 hours ago        850MB
+<none>                         <none>                    5d11b70fe108        47 hours ago        667MB
+sonarqube                      lts                       e1ed619be9f7        6 days ago          484MB
+jenkins/jenkins                lts                       135a0d19f757        7 days ago          667MB
+postgres                       9.6                       3861a6b72431        12 days ago         200MB
+hello-world                    latest                    bf756fb1ae65        7 months ago        13.3kB
+nordri/clair-scanner           latest                    6864bed43de3        14 months ago       149MB
+quay.io/coreos/clair           latest                    79f851f41934        17 months ago       355MB
+openjdk                        11.0.1-jre-slim-stretch   49b31a72a85a        18 months ago       274MB
+registry.mydomain.com/debian   9.5                       be2868bebaba        21 months ago       101MB
+debian                         9.5                       be2868bebaba        21 months ago       101MB
+imiell/bad-dockerfile          latest                    abd4f451ddb7        2 years ago         1.08GB
+jgsqware/clairctl              latest                    0a13af3e97a0        3 years ago         43.8MB
+quay.io/coreos/clair           v2.0.0                    c5ec68ce85d5        3 years ago         387MB
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker images
+REPOSITORY                     TAG                       IMAGE ID            CREATED             SIZE
+arminc/clair-db                latest                    4b8387ec1be8        4 hours ago         618MB
+webgoat-abrin09                5                         e984578d31cf        47 hours ago        380MB
+webgoat-abrin09                4                         6c9d90629ab8        47 hours ago        380MB
+webgoat-abrin09                3                         dc3e04149a38        47 hours ago        380MB
+<none>                         <none>                    9c5dc08aceca        47 hours ago        292MB
+18-19_absace_jenkins           latest                    a408094dfebe        47 hours ago        1.41GB
+sonarqube                      lts                       e1ed619be9f7        6 days ago          484MB
+jenkins/jenkins                lts                       135a0d19f757        7 days ago          667MB
+postgres                       9.6                       3861a6b72431        12 days ago         200MB
+hello-world                    latest                    bf756fb1ae65        7 months ago        13.3kB
+nordri/clair-scanner           latest                    6864bed43de3        14 months ago       149MB
+quay.io/coreos/clair           latest                    79f851f41934        17 months ago       355MB
+openjdk                        11.0.1-jre-slim-stretch   49b31a72a85a        18 months ago       274MB
+debian                         9.5                       be2868bebaba        21 months ago       101MB
+registry.mydomain.com/debian   9.5                       be2868bebaba        21 months ago       101MB
+imiell/bad-dockerfile          latest                    abd4f451ddb7        2 years ago         1.08GB
+jgsqware/clairctl              latest                    0a13af3e97a0        3 years ago         43.8MB
+quay.io/coreos/clair           v2.0.0                    c5ec68ce85d5        3 years ago         387MB
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker rmi webgoat-abrin09:3
+Untagged: webgoat-abrin09:3
+Deleted: sha256:dc3e04149a3867faa20df39e9a244b9c02de9a99cca751e17676309e76228047
+Deleted: sha256:b5abd432979c169ba06f827c68ea48d705de3238ba56dabd37940a9761414741
+Deleted: sha256:d862f387a937d3373d96e70e9f6512d896e3c8d7baf27cf7bf02882cb5ceac80
+Deleted: sha256:7f4a9a3cad2fd6f6705a1154d8f5a66f5fe1af3ceecb77ec8320a96b361a2de0
+Deleted: sha256:b5efcb7949362ea18002ee52f58d437baeb2a8e1faf058e0614b25d0a3925f30
+Deleted: sha256:286c597e3d801c2e77f0fb8801a9a7c1ca659de6e71e5dab6dbba5cbed586388
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker rmi webgoat-abrin09:4
+Untagged: webgoat-abrin09:4
+Deleted: sha256:6c9d90629ab8f3d243f1b6bbbe5fea1e4672eacda5e8516f31773c37bc6aee89
+Deleted: sha256:f3bb8ad4725bd0d60e2636cc13a5a1735039126756e7e1d84cf8416e5ffbe88e
+Deleted: sha256:5e4d038a6be7cbd82b27486c059a91d3425132c40964f97130f59be38628d72e
+Deleted: sha256:8a90a2ed8978bb0a12f8432f172c95b1284bc1085cbaf4d8d5eca0a60386983b
+Deleted: sha256:1f43a0ed5b0298886e62d2c3eb714ee8ed49630eb3469e814bfc30ae5fbfdf31
+Deleted: sha256:b94b6b1c12b338ee224cab5be638d2b37117d0bab60e2a97ac85ef183e1e4bc6
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker rmi webgoat-abrin09:5
+Untagged: webgoat-abrin09:5
+Deleted: sha256:e984578d31cfd7c4168cff93db544b1280545c81d20339f6559828047c351524
+Deleted: sha256:51480c496902099d9b1e1f67f17c94849fce99608c2d2356adc758eb3594ea27
+Deleted: sha256:d522056ee764086260d3a7ea00c9aee30c552ada9b68f1f0fadea8bfaae88ffa
+Deleted: sha256:bf826e84e20e2ea5fa32695de1f32d5c9320de205542cd173c4585792081af1f
+Deleted: sha256:6f8ee84652bafe9d21920508d8ea472092b8cee4819e949845ed2b5184f36498
+Deleted: sha256:b7a7239d6b193337ea3b9f6c751a13502a22aa96527c2143442d652b2ead14db
+Deleted: sha256:7778b758c37af2cb74593bbf7f2941ef37c0bb40277e3c49ecd24e79d5658ed0
+Deleted: sha256:d236ff9cb6df5e9b27e158007a142bd1780a2aaab39b73059f0d751821d9f084
+Deleted: sha256:8c279bace0d97978c997dbf8680cf7005add50231e2ed1ff656e1e3a93d5d1a0
+Deleted: sha256:29b6c1b57aee73aaa66a82acad161f890461d46c8c3d5855988ba47d7137c209
+Deleted: sha256:a208789e92a0d065474362185002e9a8ca14184e3e11f0bbc253a1c9f56b11fa
+Deleted: sha256:1776c7d1d4450bcc1055810023525bda961b21387363265c3f8f052206d5681f
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l 18-19_absace_jenkins
+
+Image: /18-19_absace_jenkins:latest
+ 24 layers found
+
+  ➜ Analysis [d359f2aee31f] found 443 vulnerabilities.
+  ➜ Analysis [3649e7ca9d81] found 443 vulnerabilities.
+  ➜ Analysis [3365819f3e82] found 198 vulnerabilities.
+  ➜ Analysis [eae0617355cf] found 198 vulnerabilities.
+  ➜ Analysis [eff71bfec501] found 198 vulnerabilities.
+  ➜ Analysis [b01b945fe9cc] found 166 vulnerabilities.
+  ➜ Analysis [d9df4542817c] found 166 vulnerabilities.
+  ➜ Analysis [ac477103f47d] found 166 vulnerabilities.
+  ➜ Analysis [ff7461221be9] found 166 vulnerabilities.
+  ➜ Analysis [eb6983abe31d] found 166 vulnerabilities.
+  ➜ Analysis [0b41f504e98e] found 166 vulnerabilities.
+  ➜ Analysis [bc3812016267] found 166 vulnerabilities.
+  ➜ Analysis [c845da09327c] found 166 vulnerabilities.
+  ➜ Analysis [4b912b2faa35] found 166 vulnerabilities.
+  ➜ Analysis [9a501fec44a8] found 166 vulnerabilities.
+  ➜ Analysis [426b4a6c0194] found 166 vulnerabilities.
+  ➜ Analysis [5ce4d85ef8f8] found 166 vulnerabilities.
+  ➜ Analysis [c7cfd2580319] found 179 vulnerabilities.
+  ➜ Analysis [b6f61e19230d] found 179 vulnerabilities.
+  ➜ Analysis [c45676f7f489] found 179 vulnerabilities.
+  ➜ Analysis [899b5323a32d] found 175 vulnerabilities.
+  ➜ Analysis [75215e281909] found 133 vulnerabilities.
+  ➜ Analysis [60693404063f] found 112 vulnerabilities.
+  ➜ Analysis [a473c55f2602] found 85 vulnerabilities.
+
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l imiell/bad-dockerfile
+
+Image: /imiell/bad-dockerfile:latest
+ 20 layers found
+
+  ➜ Analysis [64dfb24359bf] found 287 vulnerabilities.
+  ➜ Analysis [e91a3fa66937] found 287 vulnerabilities.
+  ➜ Analysis [c1a3264f30ff] found 287 vulnerabilities.
+  ➜ Analysis [74ae1b401beb] found 287 vulnerabilities.
+  ➜ Analysis [dc849175b7d7] found 275 vulnerabilities.
+  ➜ Analysis [6b1453c765e9] found 275 vulnerabilities.
+  ➜ Analysis [1a6b15cb4451] found 275 vulnerabilities.
+  ➜ Analysis [eaaf4885f570] found 275 vulnerabilities.
+  ➜ Analysis [126b2a77ca35] found 275 vulnerabilities.
+  ➜ Analysis [7721f782f68d] found 275 vulnerabilities.
+  ➜ Analysis [584d61e2a7a0] found 275 vulnerabilities.
+  ➜ Analysis [a65231aa2761] found 200 vulnerabilities.
+  ➜ Analysis [5143ee83b176] found 153 vulnerabilities.
+  ➜ Analysis [177dbf2e036a] found 153 vulnerabilities.
+  ➜ Analysis [c14d24f30ae0] found 153 vulnerabilities.
+  ➜ Analysis [d2de7387e478] found 153 vulnerabilities.
+  ➜ Analysis [7a5cb82881a3] found 153 vulnerabilities.
+  ➜ Analysis [44f47b929019] found 148 vulnerabilities.
+  ➜ Analysis [ae3c16a276a7] found 94 vulnerabilities.
+  ➜ Analysis [216168069a51] found 174 vulnerabilities.
+
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl report -l imiell/bad-dockerfile
+HTML report at /reports/html/analysis-imiell-bad-dockerfile-latest.html
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl analyze -l 18-19_absace_jenkins
+
+Image: /18-19_absace_jenkins:latest
+ 24 layers found
+
+  ➜ Analysis [d359f2aee31f] found 443 vulnerabilities.
+  ➜ Analysis [3649e7ca9d81] found 443 vulnerabilities.
+  ➜ Analysis [3365819f3e82] found 198 vulnerabilities.
+  ➜ Analysis [eae0617355cf] found 198 vulnerabilities.
+  ➜ Analysis [eff71bfec501] found 198 vulnerabilities.
+  ➜ Analysis [b01b945fe9cc] found 166 vulnerabilities.
+  ➜ Analysis [d9df4542817c] found 166 vulnerabilities.
+  ➜ Analysis [ac477103f47d] found 166 vulnerabilities.
+  ➜ Analysis [ff7461221be9] found 166 vulnerabilities.
+  ➜ Analysis [eb6983abe31d] found 166 vulnerabilities.
+  ➜ Analysis [0b41f504e98e] found 166 vulnerabilities.
+  ➜ Analysis [bc3812016267] found 166 vulnerabilities.
+  ➜ Analysis [c845da09327c] found 166 vulnerabilities.
+  ➜ Analysis [4b912b2faa35] found 166 vulnerabilities.
+  ➜ Analysis [9a501fec44a8] found 166 vulnerabilities.
+  ➜ Analysis [426b4a6c0194] found 166 vulnerabilities.
+  ➜ Analysis [5ce4d85ef8f8] found 166 vulnerabilities.
+  ➜ Analysis [c7cfd2580319] found 179 vulnerabilities.
+  ➜ Analysis [b6f61e19230d] found 179 vulnerabilities.
+  ➜ Analysis [c45676f7f489] found 179 vulnerabilities.
+  ➜ Analysis [899b5323a32d] found 175 vulnerabilities.
+  ➜ Analysis [75215e281909] found 133 vulnerabilities.
+  ➜ Analysis [60693404063f] found 112 vulnerabilities.
+  ➜ Analysis [a473c55f2602] found 85 vulnerabilities.
+
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$ docker-compose exec clairctl clairctl report  -l 18-19_absace_jenkins
+HTML report at /reports/html/analysis-18-19_absace_jenkins-latest.html
+cleaning temporary local repository: remove /tmp: device or resource busy
+ubuntu@ip-172-31-41-31:~/clair_probando/clairctl$

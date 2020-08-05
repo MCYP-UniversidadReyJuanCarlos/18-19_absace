@@ -40,7 +40,7 @@ services:
     depends_on:
       - clair-postgres
     volumes:
-      - ${PWD}/clairForClairScanner/config.yaml:/config/config.yaml
+      - ${PWD}/clair_config_forClairScanner/config.yaml:/config/config.yaml
     networks:
       - mynet
     restart: on-failure

@@ -44,6 +44,7 @@ services:
     command: ["--log-level=debug", "--config=/config/config.yml"]
     networks:
       - mynet
+    user: root
 
   clairctl:
     image: jgsqware/clairctl:latest
@@ -55,10 +56,13 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - clair
+    networks:
+      - mynet
+    user: root
 
 networks:
   mynet:
     driver: bridge
 volumes:
   jenkins_home:
-  postgres:
+

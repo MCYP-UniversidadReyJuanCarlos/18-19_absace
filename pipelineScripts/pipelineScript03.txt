@@ -3,10 +3,11 @@ pipeline {
 	environment {
 		//Variables de entorno
 		workspace = pwd()
+		sonarURL="http://54.195.138.154:9000/"
 	}
 	tools { 
 		maven 'maven363'
-		//'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
+		'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
 	}
 	stages {
 		stage('Checkout repository changes') {
@@ -20,18 +21,8 @@ pipeline {
 		stage('SAST analysis') {
 			steps {
 				echo 'Performing SAST analysis to the code from the commit'
-				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQubeScanner/bin/sonar-scanner -X -Dsonar.host.url=http://34.245.15.238:9000/ -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
+				sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQubeScanner/bin/sonar-scanner -X -Dsonar.host.url=$sonarURL -Dsonar.projectKey=webgoat -Dsonar.projectName=webgoat -Dsonar.projectVersion=1.0 -Dsonar.java.binaries=. -Dsonar.exclusions=**/*.ts"
 				echo 'SAST Finished!!!'
-			}
-		}
-		stage('Docker Build') {
-			steps {
-				echo 'Compiling Code'
-				sh "mvn clean install -DskipTests"
-				echo 'Compilated Code Succesful'
-				echo 'Building docker image'
-				sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
-				echo 'Docker image builded'
 			}
 		}
 		stage('Dependency analysis') {
@@ -42,6 +33,30 @@ pipeline {
 				echo 'Finished!!!'
 				dependencyCheckPublisher pattern: 'dependency-check-report.xml'
 				echo 'Publishing results...'
+			}
+		}
+		stage('Docker Build') {
+			steps {
+				echo 'Compiling Code'
+				sh "mvn clean install -DskipTests"
+				echo 'Compilated Code Succesful'
+				echo 'Building docker image'
+				sh "docker build -t webgoat/webgoat-8.1 ./webgoat-server"
+				echo 'Docker image builded'
+			}
+		}
+		stage ('Security scanner') {
+			steps {
+				echo 'To Do integration of Clair with Pipeline'
+				sh "docker exec clairctl_clairctl_1 clairctl analyze -l webgoat/webgoat-8.1"
+				sh "docker exec clairctl_clairctl_1 clairctl report -l webgoat/webgoat-8.1"
+			}
+		}
+		stage('Docker Deployment') {
+			steps {
+				echo 'Deploying the application in Standby'
+				//sh "docker tag webgoat/webgoat-8.1 localhost:4443/webgoat-8.1"
+				//sh "docker run -d --name webgoat-asc -p 8888:8080 webgoat/webgoat-8.1"
 			}
 		}
 	}

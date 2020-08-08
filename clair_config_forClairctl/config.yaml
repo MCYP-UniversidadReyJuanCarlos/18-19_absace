@@ -20,7 +20,9 @@ clair:
     options:
       # PostgreSQL Connection string
       # https://www.postgresql.org/docs/current/static/libpq-connect.html#LIBPQ-CONNSTRING
-      source: host=postgres port=5432 user=postgres sslmode=disable statement_timeout=60000
+      #source: host=postgres port=5432 user=postgres sslmode=disable statement_timeout=60000
+      source: postgresql://clair:ChangeMe@postgres:5432/clair?sslmode=disable
+
 
       # Number of elements kept in the cache
       # Values unlikely to change (e.g. namespaces) are cached in order to save prevent needless roundtrips to the database.
@@ -38,12 +40,12 @@ clair:
   api:
     # v3 grpc/RESTful API server address
     #addr: "0.0.0.0:6060"
-    port: "6060"
+    port: 6060
 
     # Health server address
     # This is an unencrypted endpoint useful for load balancers to check to healthiness of the clair server.
     #healthaddr: "0.0.0.0:6061"
-    healthport: "6061"
+    healthport: 6061
 
     # Deadline before an API request will respond with a 503
     timeout: 900s

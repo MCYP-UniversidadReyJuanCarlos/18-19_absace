@@ -51,7 +51,7 @@ services:
     image: jgsqware/clairctl:latest
     restart: unless-stopped
     environment: 
-      - DOCKER_API_VERSION=1.24
+      - DOCKER_API_VERSION=1.40
     volumes:
       - ./docker-compose-data/clairctl-reports/:/reports/:rw
       - /var/run/docker.sock:/var/run/docker.sock

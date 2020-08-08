@@ -21,13 +21,13 @@ services:
     networks:
       - mynet
 
-  clair-postgres:
-    image: arminc/clair-db:latest
-    ports:
-      - "5432:5432"
+  postgres:
+    image: postgres:9.6
     restart: unless-stopped
     volumes:
       - clair-postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
     networks:
       - mynet
 
@@ -38,20 +38,26 @@ services:
       - "6060:6060"
       - "6061:6061"
     depends_on:
-      - clair-postgres
+      - postgres
     volumes:
-      - ${PWD}/clair_config_forClairScanner/config.yaml:/config/config.yaml
+      - type: bind
+        source: $PWD/clair_config_forClairctl
+        target: /config
     networks:
       - mynet
     restart: on-failure
 
-  clair-scanner:
-    image: nordri/clair-scanner:latest
+  clairctl:
+    image: jgsqware/clairctl:latest
+    restart: unless-stopped
+    environment: 
+      - DOCKER_API_VERSION=1.24
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-    networks:
-      - mynet
-    
+      - ./docker-compose-data/clairctl-reports/:/reports/:rw
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    depends_on:
+      - clair
+
 networks:
   mynet:
     driver: bridge

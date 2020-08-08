@@ -54,7 +54,7 @@ services:
       - DOCKER_API_VERSION=1.24
     volumes:
       - ./docker-compose-data/clairctl-reports/:/reports/:rw
-      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - clair
 

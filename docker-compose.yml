@@ -40,9 +40,7 @@ services:
     depends_on:
       - postgres
     volumes:
-      - type: bind
-        source: $PWD/clair_config_forClairctl
-        target: /config
+      - ./clair_config_forClairctl:/config
     networks:
       - mynet
     restart: on-failure

@@ -34,7 +34,7 @@ services:
       - mynet
 
   clair:
-    image: quay.io/coreos/clair:v2.0.6
+    image: quay.io/coreos/clair:v2.0.0
     restart: unless-stopped
     volumes:
       - ./docker-compose-data/clair-config/:/config/:ro

@@ -41,10 +41,10 @@ services:
       - ./docker-compose-data/clair-tmp/:/tmp/:rw
     depends_on: 
       - postgres
-    command: ["--log-level=debug", "--config=/config/config.yml"]
+    command: ["--log-level=debug", "--config", "/config/config.yml"]
+    user: root
     networks:
       - mynet
-    user: root
 
   clairctl:
     image: jgsqware/clairctl:latest

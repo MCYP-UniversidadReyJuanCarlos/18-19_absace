@@ -37,12 +37,12 @@ services:
     image: quay.io/coreos/clair:v2.0.0
     restart: unless-stopped
     volumes:
-      - ./clair-config-forClairctl/:/config/
-      - ./docker-compose-data/clair-tmp/:/tmp/
+      - ./clair-config-forClairctl/:/config/:ro
+      - ./docker-compose-data/clair-tmp/:/tmp/:rw
     depends_on: 
       - postgres
-    command: --log-level=debug
-    command: --config=/config/config.yaml
+    command: -log-level=debug
+    command: -config=/config/config.yaml
     user: root
     networks:
       - mynet

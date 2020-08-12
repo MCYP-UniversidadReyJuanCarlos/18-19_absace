@@ -42,7 +42,7 @@ services:
     depends_on: 
       - postgres
     command: -config=/config/config.yaml
-    command: -log-level=debug
+    #command: -log-level=debug
     user: root
     networks:
       - mynet

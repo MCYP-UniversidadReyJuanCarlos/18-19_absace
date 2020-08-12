@@ -41,8 +41,8 @@ services:
       - ./docker-compose-data/clair-tmp/:/tmp/:rw
     depends_on: 
       - postgres
-    command: --config=/config/config.yaml
-    command: --log-level=debug
+    command: -config=/config/config.yaml
+    command: -log-level=debug
     user: root
     networks:
       - mynet

@@ -1,0 +1,269 @@
+Using username "ubuntu".
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 5.3.0-1032-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Thu Aug 13 17:04:41 UTC 2020
+
+  System load:                    1.44
+  Usage of /:                     47.9% of 29.02GB
+  Memory usage:                   1%
+  Swap usage:                     0%
+  Processes:                      129
+  Users logged in:                0
+  IP address for eth0:            172.31.41.31
+  IP address for br-a66a8ffeed78: 172.20.0.1
+  IP address for docker0:         172.17.0.1
+  IP address for br-38232b45ac7d: 172.21.0.1
+  IP address for br-3f052ecb7750: 172.18.0.1
+  IP address for br-8433c55209a4: 172.19.0.1
+
+ * Are you ready for Kubernetes 1.19? It's nearly here! Try RC3 with
+   sudo snap install microk8s --channel=1.19/candidate --classic
+
+   https://microk8s.io/ has docs and details.
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+13 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Thu Aug 13 12:40:23 2020 from 95.125.241.104
+ubuntu@ip-172-31-41-31:~$ cd 18-19_absace/
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git fetch
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 7 (delta 5), reused 7 (delta 5), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/MCYP-UniversidadReyJuanCarlos/18-19_absace
+   c793ded..fe0cd76  master     -> origin/master
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git status
+warning: could not open directory 'docker-compose-data/postgres-data/': Permission denied
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        docker-compose-data/clairctl-reports/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ ls -la docker-compose-data/clairctl-reports/html/analysis-webgoat-webgoat-8.1-                                                                                                                        latest.html
+-rw-r--r-- 1 root root 267787 Aug 13 00:54 docker-compose-data/clairctl-reports/html/analysis-webgoat-webgoat-8.1-lat                                                                                                                        est.html
+ubuntu@ip-172-31-41-31:~/18-19_absace$ ls -la docker-compose-data/
+total 24
+drwxr-xr-x  6 root   root   4096 Aug  9 12:36 .
+drwxrwxr-x  9 ubuntu ubuntu 4096 Aug 12 18:26 ..
+drwxr-xr-x  2 root   root   4096 Aug  9 12:46 clair-config
+drwxr-xr-x  2 root   root   4096 Aug 13 12:53 clair-tmp
+drwxr-xr-x  3 root   root   4096 Aug 12 18:44 clairctl-reports
+drwx------ 19    999 root   4096 Aug 13 12:53 postgres-data
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git pull
+Updating c793ded..fe0cd76
+Fast-forward
+ docker-compose.yml                   | 7 +++++++
+ pipelineScripts/pipelineScript03.txt | 6 +++---
+ 2 files changed, 10 insertions(+), 3 deletions(-)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ex
+exec    export
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair
+18-19_absace_clair_1     18-19_absace_clairctl_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair
+18-19_absace_clair_1     18-19_absace_clairctl_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair-scanner_1 bash
+Error response from daemon: Container d5d0fddfc518c12b761131603f6af04014ba48d06b179567563d2fbb147a7b70 is not running
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS              PO                                                                                                                        RTS                                              NAMES
+7a955e5f903b        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     23 hours ago        Up 2 minutes        44                                                                                                                        480/tcp                                          18-19_absace_clairctl_1
+3e9458a2aad4        quay.io/coreos/clair:v2.0.6   "/clair -config=/con…"   23 hours ago        Up 2 minutes        0.                                                                                                                        0.0.0:6060-6061->6060-6061/tcp                   18-19_absace_clair_1
+c0f310a33030        postgres:9.6                  "docker-entrypoint.s…"   23 hours ago        Up 2 minutes        54                                                                                                                        32/tcp                                           18-19_absace_postgres_1
+c3f6d4985656        sonarqube:lts                 "./bin/run.sh"           10 days ago         Up 2 minutes        0.                                                                                                                        0.0.0:9000->9000/tcp                             18-19_absace_sonarqube_1
+07670a2d103a        18-19_absace_jenkins          "/sbin/tini -- /usr/…"   10 days ago         Up 2 minutes        0.                                                                                                                        0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   18-19_absace_jenkins_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker-compose stop
+Stopping 18-19_absace_clairctl_1  ... done
+Stopping 18-19_absace_clair_1     ... done
+Stopping 18-19_absace_postgres_1  ... done
+Stopping 18-19_absace_sonarqube_1 ... done
+Stopping 18-19_absace_jenkins_1   ... done
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/MCYP-UniversidadReyJuanCarlos/18-19_absace
+   fe0cd76..5680fb6  master     -> origin/master
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git status
+warning: could not open directory 'docker-compose-data/postgres-data/': Permission denied
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        docker-compose-data/clairctl-reports/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git pull
+Updating fe0cd76..5680fb6
+Fast-forward
+ docker-compose.yml | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair-scanner_1 bash
+Error response from daemon: Container 9096ede15b2ab0f4616a0d2f4170f652b90fbd02e42ed170a1287812dd46b6bb is not running
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair
+18-19_absace_clair_1     18-19_absace_clairctl_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_clair^C
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker-compose stop
+Stopping 18-19_absace_clairctl_1  ... done
+Stopping 18-19_absace_clair_1     ... done
+Stopping 18-19_absace_postgres_1  ... done
+Stopping 18-19_absace_sonarqube_1 ... done
+Stopping 18-19_absace_jenkins_1   ... done
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker rm
+18-19_absace_clair-scanner_1  18-19_absace_postgres_1       clairctl_clair_1
+18-19_absace_clair_1          18-19_absace_sonarqube_1      clairctl_clairctl_1
+18-19_absace_clairctl_1       clair                         clairctl_postgres_1
+18-19_absace_jenkins_1        clair-postgres
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker rm 18-19_absace_clair-scanner_1
+18-19_absace_clair-scanner_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/MCYP-UniversidadReyJuanCarlos/18-19_absace
+   5680fb6..f8726ce  master     -> origin/master
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git status
+warning: could not open directory 'docker-compose-data/postgres-data/': Permission denied
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        docker-compose-data/clairctl-reports/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git pull
+Updating 5680fb6..f8726ce
+Fast-forward
+ docker-compose.yml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run -ti --rm --name clair-scanner --net mynet docker run -ti \
+>   --rm \
+>   --name clair-scanner \
+>   --net ci \
+>   -v /var/run/docker.sock:/var/run/docker.sock \
+> ^C
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run -ti --rm --name clair-scanner --net mynet nordri/clair-scanner:late                                                                                                                        st /bin/bash
+docker: Error response from daemon: network mynet not found.
+ubuntu@ip-172-31-41-31:~/18-19_absace$ sudo docker run -ti --rm --name clair-scanner --net mynet nordri/clair-scanner                                                                                                                        :latest /bin/bash
+docker: Error response from daemon: network mynet not found.
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker network inspect
+"docker network inspect" requires at least 1 argument.
+See 'docker network inspect --help'.
+
+Usage:  docker network inspect [OPTIONS] NETWORK [NETWORK...]
+
+Display detailed information on one or more networks
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker network
+
+Usage:  docker network COMMAND
+
+Manage networks
+
+Commands:
+  connect     Connect a container to a network
+  create      Create a network
+  disconnect  Disconnect a container from a network
+  inspect     Display detailed information on one or more networks
+  ls          List networks
+  prune       Remove all unused networks
+  rm          Remove one or more networks
+
+Run 'docker network COMMAND --help' for more information on a command.
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker network ls
+NETWORK ID          NAME                   DRIVER              SCOPE
+8433c55209a4        18-19_absace_default   bridge              local
+3f052ecb7750        18-19_absace_mynet     bridge              local
+fcfb59b2ad09        bridge                 bridge              local
+a66a8ffeed78        ci                     bridge              local
+38232b45ac7d        clairctl_default       bridge              local
+233f5db6a7f6        host                   host                local
+2862b2a72c56        none                   null                local
+ubuntu@ip-172-31-41-31:~/18-19_absace$ sudo docker run -ti --rm --name clair-scanner --net 18-19_absace_mynet nordri/                                                                                                                        clair-scanner:latest /bin/bash
+root@03c88d1df295:/# exit
+exit
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                                                                                                                                                  PORTS                                              NAMES
+cfb205e40384        nordri/clair-scanner:latest   "bash"                   10 minutes ago      Restarting (0) 31 seco                                                                                                                        nds ago                                                      18-19_absace_clairscanner_1
+7a955e5f903b        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     23 hours ago        Up 10 minutes                                                                                                                                           44480/tcp                                          18-19_absace_clairctl_1
+3e9458a2aad4        quay.io/coreos/clair:v2.0.6   "/clair -config=/con…"   23 hours ago        Up 10 minutes                                                                                                                                           0.0.0.0:6060-6061->6060-6061/tcp                   18-19_absace_clair_1
+c0f310a33030        postgres:9.6                  "docker-entrypoint.s…"   23 hours ago        Up 10 minutes                                                                                                                                           5432/tcp                                           18-19_absace_postgres_1
+c3f6d4985656        sonarqube:lts                 "./bin/run.sh"           10 days ago         Up 10 minutes                                                                                                                                           0.0.0.0:9000->9000/tcp                             18-19_absace_sonarqube_1
+07670a2d103a        18-19_absace_jenkins          "/sbin/tini -- /usr/…"   10 days ago         Up 10 minutes                                                                                                                                           0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   18-19_absace_jenkins_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker exec -it 18-19_absace_
+18-19_absace_clair_1      18-19_absace_jenkins_1    18-19_absace_sonarqube_1
+18-19_absace_clairctl_1   18-19_absace_postgres_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                          PORTS                                              NAMES
+cfb205e40384        nordri/clair-scanner:latest   "bash"                   11 minutes ago      Restarting (0) 31 seconds ago                                                      18-19_absace_clairscanner_1
+7a955e5f903b        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     23 hours ago        Up 11 minutes                   44480/tcp                                          18-19_absace_clairctl_1
+3e9458a2aad4        quay.io/coreos/clair:v2.0.6   "/clair -config=/con…"   23 hours ago        Up 11 minutes                   0.0.0.0:6060-6061->6060-6061/tcp                   18-19_absace_clair_1
+c0f310a33030        postgres:9.6                  "docker-entrypoint.s…"   23 hours ago        Up 11 minutes                   5432/tcp                                           18-19_absace_postgres_1
+c3f6d4985656        sonarqube:lts                 "./bin/run.sh"           10 days ago         Up 11 minutes                   0.0.0.0:9000->9000/tcp                             18-19_absace_sonarqube_1
+07670a2d103a        18-19_absace_jenkins          "/sbin/tini -- /usr/…"   10 days ago         Up 11 minutes                   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   18-19_absace_jenkins_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ sudo docker run -ti --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest
+root@959834d84993:/# exit
+exit
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                          PORTS                                              NAMES
+cfb205e40384        nordri/clair-scanner:latest   "bash"                   12 minutes ago      Restarting (0) 16 seconds ago                                                      18-19_absace_clairscanner_1
+7a955e5f903b        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     23 hours ago        Up 12 minutes                   44480/tcp                                          18-19_absace_clairctl_1
+3e9458a2aad4        quay.io/coreos/clair:v2.0.6   "/clair -config=/con…"   23 hours ago        Up 12 minutes                   0.0.0.0:6060-6061->6060-6061/tcp                   18-19_absace_clair_1
+c0f310a33030        postgres:9.6                  "docker-entrypoint.s…"   23 hours ago        Up 12 minutes                   5432/tcp                                           18-19_absace_postgres_1
+c3f6d4985656        sonarqube:lts                 "./bin/run.sh"           10 days ago         Up 12 minutes                   0.0.0.0:9000->9000/tcp                             18-19_absace_sonarqube_1
+07670a2d103a        18-19_absace_jenkins          "/sbin/tini -- /usr/…"   10 days ago         Up 12 minutes                   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   18-19_absace_jenkins_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker ps
+CONTAINER ID        IMAGE                         COMMAND                  CREATED             STATUS                          PORTS                                              NAMES
+cfb205e40384        nordri/clair-scanner:latest   "bash"                   12 minutes ago      Restarting (0) 40 seconds ago                                                      18-19_absace_clairscanner_1
+7a955e5f903b        jgsqware/clairctl:latest      "/usr/sbin/crond -f"     23 hours ago        Up 12 minutes                   44480/tcp                                          18-19_absace_clairctl_1
+3e9458a2aad4        quay.io/coreos/clair:v2.0.6   "/clair -config=/con…"   23 hours ago        Up 12 minutes                   0.0.0.0:6060-6061->6060-6061/tcp                   18-19_absace_clair_1
+c0f310a33030        postgres:9.6                  "docker-entrypoint.s…"   23 hours ago        Up 12 minutes                   5432/tcp                                           18-19_absace_postgres_1
+c3f6d4985656        sonarqube:lts                 "./bin/run.sh"           10 days ago         Up 12 minutes                   0.0.0.0:9000->9000/tcp                             18-19_absace_sonarqube_1
+07670a2d103a        18-19_absace_jenkins          "/sbin/tini -- /usr/…"   10 days ago         Up 12 minutes                   0.0.0.0:8080->8080/tcp, 0.0.0.0:50000->50000/tcp   18-19_absace_jenkins_1
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run -ti --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest /bin/bash
+root@3c7b99bf5bc2:/# exit
+exit
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run -ti --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest bash
+root@8efee4399d0e:/# exit
+exit
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker run -ti --rm --name clair-scanner --net 18-19_absace_mynet nordri/clair-scanner:latest bash
+root@15a070a553a6:/# xport IP=$(ip r | tail -n1 | awk '{ print $9 }')^C
+root@15a070a553a6:/# export IP=$(ip r | tail -n1 | awk '{ print $9 }')
+root@15a070a553a6:/# echo $IP
+172.18.0.7
+root@15a070a553a6:/# exit
+exit
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker-compose stop
+Stopping 18-19_absace_clairscanner_1 ... done
+Stopping 18-19_absace_clairctl_1     ... done
+Stopping 18-19_absace_clair_1        ... done
+Stopping 18-19_absace_postgres_1     ... done
+Stopping 18-19_absace_sonarqube_1    ... done
+Stopping 18-19_absace_jenkins_1      ... done
+ubuntu@ip-172-31-41-31:~/18-19_absace$

@@ -3,11 +3,11 @@ pipeline {
 	environment {
 		//Variables de entorno
 		workspace = pwd()
-		sonarURL="http://54.194.138.154:9000"
+		sonarURL="http://34.245.172.144:9000"
 	}
 	tools { 
 		maven 'maven363'
-		'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
+		//'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
 	}
 	stages {
 		stage('Checkout repository changes') {
@@ -48,8 +48,16 @@ pipeline {
 		stage ('Security scanner') {
 			steps {
 				echo 'To Do integration of Clair with Pipeline'
+				sh "docker exec -it 18-19_absace_clairctl_1 rm /reports/html/analysis-webgoat-webgoat-8.1-latest.html || exit 0"
+				sh "docker exec -it 18-19_absace_clairctl_1 ls -la /reports/html || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl analyze -l webgoat/webgoat-8.1 || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl report -l webgoat/webgoat-8.1 || exit 0"
+				sh "docker cp 18-19_absace_clairctl_1:/reports/html/analysis-webgoat-webgoat-8.1-latest.html ${WORKSPACE}/analysis-webgoat-webgoat-8.1-latest.html"
+				sh '''
+					DOCKER_GATEWAY=$(ip r | tail -n1 | awk '{ print $9 }')
+					wget -qO clair-scanner https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64 && chmod +x clair-scanner
+					./clair-scanner --ip="$DOCKER_GATEWAY" --clair=http://clair:6060 webgoat/webgoat-8.1 || exit 0
+				'''
 			}
 		}
 		stage('Docker Deployment') {

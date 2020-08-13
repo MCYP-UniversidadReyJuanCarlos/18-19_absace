@@ -62,6 +62,13 @@ services:
     networks:
       - mynet
     user: root
+    
+  clair-scanner:
+    image: nordri/clair-scanner:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - mynet
 
 networks:
   mynet:

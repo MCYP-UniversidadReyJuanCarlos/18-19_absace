@@ -36,7 +36,7 @@ services:
   clair:
     image: quay.io/coreos/clair:v2.0.6
     command: -config=/config/config.yaml
-    command: -log-level=debug
+    #command: -log-level=debug
     ports:
       - 6060:6060
       - 6061:6061

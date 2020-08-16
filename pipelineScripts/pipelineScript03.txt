@@ -3,7 +3,7 @@ pipeline {
 	environment {
 		//Variables de entorno
 		workspace = pwd()
-		sonarURL="http://34.245.172.144:9000"
+		sonarURL="http://sonarqube:9000"
 	}
 	tools { 
 		maven 'maven363'
@@ -14,8 +14,8 @@ pipeline {
 			steps {
 				echo 'Downloading the code from GitHub'
 				checkout([$class: 'GitSCM', branches: [[name: '*/develop']],
-				doGenerateSubmoduleConfigurations: false, extensions: [],
-				submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Abrin09/WebGoat.git']]])
+					doGenerateSubmoduleConfigurations: false, extensions: [],
+					submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/Abrin09/WebGoat.git']]])
 			}
 		}
 		stage('SAST analysis') {
@@ -41,6 +41,7 @@ pipeline {
 				sh "mvn clean install -DskipTests"
 				echo 'Compilated Code Succesful'
 				echo 'Building docker image'
+				//sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
 				sh "docker build -t webgoat/webgoat-8.1 ./webgoat-server"
 				echo 'Docker image builded'
 			}
@@ -48,23 +49,44 @@ pipeline {
 		stage ('Security scanner') {
 			steps {
 				echo 'To Do integration of Clair with Pipeline'
-				sh "docker exec -it 18-19_absace_clairctl_1 rm /reports/html/analysis-webgoat-webgoat-8.1-latest.html || exit 0"
+				//sh "docker exec -it 18-19_absace_clairctl_1 rm /reports/html/analysis-webgoat-webgoat-8.1-latest.html || exit 0"
 				sh "docker exec -it 18-19_absace_clairctl_1 ls -la /reports/html || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl analyze -l webgoat/webgoat-8.1 || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl report -l webgoat/webgoat-8.1 || exit 0"
-				sh "docker cp 18-19_absace_clairctl_1:/reports/html/analysis-webgoat-webgoat-8.1-latest.html ${WORKSPACE}/analysis-webgoat-webgoat-8.1-latest.html"
+				sh "mkdir -p clairctl-reports"
+				sh "docker cp 18-19_absace_clairctl_1:/reports/html/analysis-webgoat-webgoat-8.1-latest.html ${WORKSPACE}/clairctl-reports/analysis-webgoat-webgoat-8.1-latest.html"
 				sh '''
 					DOCKER_GATEWAY=$(ip r | tail -n1 | awk '{ print $9 }')
 					wget -qO clair-scanner https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64 && chmod +x clair-scanner
 					./clair-scanner --ip="$DOCKER_GATEWAY" --clair=http://clair:6060 webgoat/webgoat-8.1 || exit 0
 				'''
+				echo 'Publishing the HTML Report'
+				sh "mkdir -p Clair-Analysis-Report"
+				publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'clairctl-reports',
+							reportFiles: 'analysis-webgoat-webgoat-8.1-latest.html', reportName: 'Clair Analysis HTML 	Report', reportTitles: 'Clair Analysis Report'])
+				echo 'Publishing succesfully done'
 			}
 		}
 		stage('Docker Deployment') {
 			steps {
-				echo 'Deploying the application in Standby'
+				echo 'Deploying the application'
 				//sh "docker tag webgoat/webgoat-8.1 localhost:4443/webgoat-8.1"
-				//sh "docker run -d --name webgoat-asc -p 8888:8080 webgoat/webgoat-8.1"
+				sh "docker run -d --name webgoat-asc -p 8888:8080 --net 18-19_absace_mynet webgoat/webgoat-8.1 || exit 0"
+				echo 'http://34.245.4.79:8888/WebGoat'
+			}
+		}
+		stage('DAST Analysis') {
+			steps {
+				echo 'DAST Analysis Starting'
+				//--api-key 5364864132243598723485
+				sh "docker exec 18-19_absace_zap_1 zap-cli quick-scan --self-contained --start-options '-config api.disablekey=true' http://webgoat-asc:8888/WebGoat"
+			}
+		}
+		stage('Stop and Delete App Docker Container') {
+			steps {
+				echo 'Stoping and Deleting the App Docker Container'
+				sh "docker stop webgoat-asc || exit 0"
+				sh "docker rm webgoat-asc || exit 0"
 			}
 		}
 	}

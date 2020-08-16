@@ -46,7 +46,7 @@ pipeline {
 				echo 'Docker image builded'
 			}
 		}
-		stage ('Security scanner') {
+		stage ('Docker Security scanner') {
 			steps {
 				echo 'To Do integration of Clair with Pipeline'
 				//sh "docker exec -it 18-19_absace_clairctl_1 rm /reports/html/analysis-webgoat-webgoat-8.1-latest.html || exit 0"

@@ -2,7 +2,6 @@ pipeline {
 	agent any
 	environment {
 		//Variables de entorno
-		workspace = pwd()
 		sonarURL="http://sonarqube:9000"
 	}
 	tools { 
@@ -57,7 +56,7 @@ pipeline {
 				sh "docker cp 18-19_absace_clairctl_1:/reports/html/analysis-webgoat-webgoat-8.1-latest.html ${WORKSPACE}/clairctl-reports/analysis-webgoat-webgoat-8.1-latest.html"
 				sh '''
 					DOCKER_GATEWAY=$(ip r | tail -n1 | awk '{ print $9 }')
-					wget -qO clair-scanner https://github.com/arminc/clair-scanner/releases/download/v8/clair-scanner_linux_amd64 && chmod +x clair-scanner
+					wget -qO clair-scanner https://github.com/arminc/clair-scanner/releases/download/v12/clair-scanner_linux_amd64 && chmod +x clair-scanner
 					./clair-scanner --ip="$DOCKER_GATEWAY" --clair=http://clair:6060 webgoat/webgoat-8.1 || exit 0
 				'''
 				echo 'Publishing the HTML Report'

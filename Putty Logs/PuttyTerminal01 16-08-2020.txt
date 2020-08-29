@@ -1,0 +1,82 @@
+Using username "ubuntu".
+Authenticating with public key "imported-openssh-key"
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 5.3.0-1032-aws x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Aug 16 15:48:22 UTC 2020
+
+  System load:                    1.11
+  Usage of /:                     52.5% of 29.02GB
+  Memory usage:                   1%
+  Swap usage:                     0%
+  Processes:                      128
+  Users logged in:                0
+  IP address for eth0:            172.31.41.31
+  IP address for br-38232b45ac7d: 172.21.0.1
+  IP address for br-3f052ecb7750: 172.18.0.1
+  IP address for docker0:         172.17.0.1
+  IP address for br-8433c55209a4: 172.19.0.1
+  IP address for br-a66a8ffeed78: 172.20.0.1
+
+ * Are you ready for Kubernetes 1.19? It's nearly here! Try RC3 with
+   sudo snap install microk8s --channel=1.19/candidate --classic
+
+   https://microk8s.io/ has docs and details.
+
+ * Canonical Livepatch is available for installation.
+   - Reduce system reboots and improve kernel security. Activate at:
+     https://ubuntu.com/livepatch
+
+13 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Sat Aug 15 13:48:51 2020 from 2.140.54.116
+ubuntu@ip-172-31-41-31:~$ cd 18-19_absace/
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git fetch
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git status
+warning: could not open directory 'docker-compose-data/postgres-data/': Permission denied
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        docker-compose-data/clairctl-reports/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git fetch
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/MCYP-UniversidadReyJuanCarlos/18-19_absace
+   8561e48..0415078  master     -> origin/master
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git status
+warning: could not open directory 'docker-compose-data/postgres-data/': Permission denied
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        docker-compose-data/clairctl-reports/
+
+nothing added to commit but untracked files present (use "git add" to track)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ git pull
+Updating 8561e48..0415078
+Fast-forward
+ docker-compose.yml | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+ubuntu@ip-172-31-41-31:~/18-19_absace$ docker-compose stop
+Stopping 18-19_absace_zap_1       ... done
+Stopping 18-19_absace_clairctl_1  ... done
+Stopping 18-19_absace_clair_1     ... done
+Stopping 18-19_absace_postgres_1  ... done
+Stopping 18-19_absace_sonarqube_1 ... done
+Stopping 18-19_absace_jenkins_1   ... done
+ubuntu@ip-172-31-41-31:~/18-19_absace$

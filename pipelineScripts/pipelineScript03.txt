@@ -71,7 +71,8 @@ pipeline {
 				echo 'Deploying the application'
 				//sh "docker tag webgoat/webgoat-8.1 localhost:4443/webgoat-8.1"
 				sh "docker run -d --name webgoat-asc -p 8888:8080 --net 18-19_absace_mynet webgoat/webgoat-8.1 || exit 0"
-				echo 'http://34.245.4.79:8888/WebGoat'
+				echo 'http://webgoat-asc:8888/WebGoat'
+				sleep 10
 			}
 		}
 		stage('DAST Analysis') {
@@ -85,7 +86,7 @@ pipeline {
 			steps {
 				echo 'Stoping and Deleting the App Docker Container'
 				sh "docker stop webgoat-asc || exit 0"
-				sh "docker rm webgoat-asc || exit 0"
+				sh "docker rm -f webgoat-asc || exit 0"
 			}
 		}
 	}

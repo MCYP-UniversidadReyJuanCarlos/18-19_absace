@@ -6,7 +6,6 @@ pipeline {
 	}
 	tools { 
 		maven 'maven363'
-		//'org.jenkinsci.plugins.docker.commons.tools.DockerTool' 'dockerJenkins'
 	}
 	stages {
 		stage('Checkout repository changes') {
@@ -28,19 +27,17 @@ pipeline {
 			steps {
 				echo 'Performing Code Dependency analysis from the commit'
 				dependencyCheck additionalArguments: '', odcInstallation: 'dependencyCheckOWASP'
-				//dependencyCheckAnalyzer datadir: 'dependency-check-data', hintsFile: '', includeCsvReports: false, includeHtmlReports: true, includeJsonReports: true, includeVulnReports: true, isAutoupdateDisabled: false, outdir: '.', scanpath: '', skipOnScmChange: false, skipOnUpstreamChange: false, suppressionFile: '', zipExtensions: ''
 				echo 'Finished!!!'
 				dependencyCheckPublisher pattern: 'dependency-check-report.xml'
 				echo 'Publishing results...'
 			}
 		}
-		stage('Docker Build') {
+		stage('Release and Docker Build') {
 			steps {
 				echo 'Compiling Code'
 				sh "mvn clean install -DskipTests"
 				echo 'Compilated Code Succesful'
 				echo 'Building docker image'
-				//sh "docker build -t webgoat-abrin09:${env.BUILD_ID} ./webgoat-server"
 				sh "docker build -t webgoat/webgoat-8.1 ./webgoat-server"
 				echo 'Docker image builded'
 			}
@@ -48,7 +45,6 @@ pipeline {
 		stage ('Docker Security scanner') {
 			steps {
 				echo 'To Do integration of Clair with Pipeline'
-				//sh "docker exec -it 18-19_absace_clairctl_1 rm /reports/html/analysis-webgoat-webgoat-8.1-latest.html || exit 0"
 				sh "docker exec -it 18-19_absace_clairctl_1 ls -la /reports/html || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl analyze -l webgoat/webgoat-8.1 || exit 0"
 				sh "docker exec 18-19_absace_clairctl_1 clairctl report -l webgoat/webgoat-8.1 || exit 0"
@@ -69,7 +65,6 @@ pipeline {
 		stage('Docker Deployment') {
 			steps {
 				echo 'Deploying the application'
-				//sh "docker tag webgoat/webgoat-8.1 localhost:4443/webgoat-8.1"
 				sh "docker run -d --name webgoat-asc -p 8888:8080 --net 18-19_absace_mynet webgoat/webgoat-8.1 || exit 0"
 				echo 'http://webgoat-asc:8888/WebGoat'
 				sleep 10
@@ -78,7 +73,6 @@ pipeline {
 		stage('DAST Analysis') {
 			steps {
 				echo 'DAST Analysis Starting'
-				//--api-key 5364864132243598723485
 				sh "docker exec 18-19_absace_zap_1 zap-cli quick-scan --self-contained --start-options '-config api.disablekey=true' http://webgoat-asc:8888/WebGoat"
 			}
 		}

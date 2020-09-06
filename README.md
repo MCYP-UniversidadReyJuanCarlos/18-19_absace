@@ -1,6 +1,7 @@
 # Repositorio del TFM del MCyP de Abraham S.C. en la URJC
 
-En este repositorio se ha ido trabajando para el desarrolo del Trabajo Fin de Máster (TFM), del Máster de Ciberseguridad y Privadicadad (MCyP) de la Uiversidad Rey Juan Carlos (URJC)
+En este repositorio se ha ido trabajando para el desarrolo del Trabajo Fin de Máster (TFM), del Máster de Ciberseguridad y Privadicadad (MCyP) de la Uiversidad Rey Juan Carlos (URJC).
+Aquí se puede encontrar tanto el documento final en PDF como la presentación en PDF del vídeo de defensa.
 
 * **Título:** DevSecOps en aplicaciones Docker y/o Kubernetes
 * **Alumno:** Abraham Santana Cebrián
@@ -9,13 +10,13 @@ En este repositorio se ha ido trabajando para el desarrolo del Trabajo Fin de M�
 
 #DevSecOps #Demo #TFM #MCyP #URJC #AWS #Docker #Kubernetes
 
-A continuación se puede acceder a los vídeos correspondientes a la predefensa del TFM a decha de 05/09/2020:
+A continuación se puede acceder a los vídeos correspondientes a la predefensa del TFM a decha de 06/09/2020:
 
-* [Presentación de la defensa del TFM][presentacion]
+* [Vídeo de Defensa del TFM][presentacion]
 * [Demo de la ejecucción exitosa del Pipeline DevSecOps][demoPipeline]
 
    [demoPipeline]: <https://youtu.be/HkFP6tAobp0>
-   [presentacion]: <https://youtu.be/HkFP6tAobp0>
+   [presentacion]: <https://youtu.be/fmOFgySOeKk>
 
 
 # Instrucciones
